@@ -1,0 +1,338 @@
+[
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66b"
+    },
+    "trainer_id": "TRN01",
+    "name": "Priya Menon",
+    "email": "priya.menon@gym.com",
+    "phone": "9845012341",
+    "password_hash": "$2b$04$8EjImvMwvOJjHJxfS9mRROf8dAyneggOsHtVgv9cMVVpgb0enfdxe",
+    "role": "trainer",
+    "specialization": [
+      "Strength Training",
+      "CrossFit"
+    ],
+    "certification": "ACE-CPT",
+    "experience_years": 6,
+    "availability": [
+      {
+        "day": "Mon",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      },
+      {
+        "day": "Wed",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      },
+      {
+        "day": "Sat",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      },
+      {
+        "day": "Thu",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      }
+    ],
+    "created_at": {
+      "$date": "2024-01-31T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66c"
+    },
+    "trainer_id": "TRN02",
+    "name": "Rohit Sharma",
+    "email": "rohit.sharma@gym.com",
+    "phone": "9845012342",
+    "password_hash": "$2b$04$8EjImvMwvOJjHJxfS9mRROo7i053b.l4AcRcedUoAJ9htd0OGlULS",
+    "role": "trainer",
+    "specialization": [
+      "HIIT",
+      "Functional Training"
+    ],
+    "certification": "NASM-CPT",
+    "experience_years": 4,
+    "availability": [
+      {
+        "day": "Fri",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      },
+      {
+        "day": "Sat",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      },
+      {
+        "day": "Thu",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      },
+      {
+        "day": "Wed",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      }
+    ],
+    "created_at": {
+      "$date": "2024-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_id": "TRN03",
+    "name": "Deepa Krishnan",
+    "email": "deepa.krishnan@gym.com",
+    "phone": "9845012343",
+    "password_hash": "$2b$04$8EjImvMwvOJjHJxfS9mRRO14K.oyty5lLNkYyQf8nhAInBLYpll7K",
+    "role": "trainer",
+    "specialization": [
+      "Yoga",
+      "Pilates"
+    ],
+    "certification": "RYT-500",
+    "experience_years": 9,
+    "availability": [
+      {
+        "day": "Fri",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      },
+      {
+        "day": "Thu",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      },
+      {
+        "day": "Sat",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      },
+      {
+        "day": "Mon",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      }
+    ],
+    "created_at": {
+      "$date": "2024-03-31T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_id": "TRN04",
+    "name": "Sanjay Pillai",
+    "email": "sanjay.pillai@gym.com",
+    "phone": "9845012344",
+    "password_hash": "$2b$04$8EjImvMwvOJjHJxfS9mRRO0Tf18BvQ5jSDN6AWH.Q0U6QowP/uWJa",
+    "role": "trainer",
+    "specialization": [
+      "Bodybuilding",
+      "Strength Training"
+    ],
+    "certification": "ISSA-CPT",
+    "experience_years": 11,
+    "availability": [
+      {
+        "day": "Mon",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      },
+      {
+        "day": "Fri",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      },
+      {
+        "day": "Sat",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      },
+      {
+        "day": "Thu",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      }
+    ],
+    "created_at": {
+      "$date": "2024-04-30T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66f"
+    },
+    "trainer_id": "TRN05",
+    "name": "Meenakshi Iyer",
+    "email": "meenakshi.iyer@gym.com",
+    "phone": "9845012345",
+    "password_hash": "$2b$04$8EjImvMwvOJjHJxfS9mRROkONEYHZ0qZEYi1t482TOowLHdMmSBBe",
+    "role": "trainer",
+    "specialization": [
+      "Zumba",
+      "Aerobics"
+    ],
+    "certification": "ZIN Licensed",
+    "experience_years": 5,
+    "availability": [
+      {
+        "day": "Wed",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      },
+      {
+        "day": "Mon",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      },
+      {
+        "day": "Thu",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      },
+      {
+        "day": "Fri",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      }
+    ],
+    "created_at": {
+      "$date": "2024-05-30T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff670"
+    },
+    "trainer_id": "TRN06",
+    "name": "Farhan Ali",
+    "email": "farhan.ali@gym.com",
+    "phone": "9845012346",
+    "password_hash": "$2b$04$8EjImvMwvOJjHJxfS9mRROKLLPQ/d54XPb287hif0TToKbNnmV7V6",
+    "role": "trainer",
+    "specialization": [
+      "Spin",
+      "Cardio"
+    ],
+    "certification": "ACSM-EP",
+    "experience_years": 3,
+    "availability": [
+      {
+        "day": "Sat",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      },
+      {
+        "day": "Thu",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      },
+      {
+        "day": "Wed",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      },
+      {
+        "day": "Mon",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      }
+    ],
+    "created_at": {
+      "$date": "2024-06-29T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff671"
+    },
+    "trainer_id": "TRN07",
+    "name": "Kavitha Reddy",
+    "email": "kavitha.reddy@gym.com",
+    "phone": "9845012347",
+    "password_hash": "$2b$04$8EjImvMwvOJjHJxfS9mRROz.le0bfpxnKGq1TDHry/veGbc7tYSe2",
+    "role": "trainer",
+    "specialization": [
+      "Yoga",
+      "Mobility"
+    ],
+    "certification": "RYT-200",
+    "experience_years": 7,
+    "availability": [
+      {
+        "day": "Thu",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      },
+      {
+        "day": "Wed",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      },
+      {
+        "day": "Fri",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      },
+      {
+        "day": "Tue",
+        "start_time": "06:00",
+        "end_time": "14:00"
+      }
+    ],
+    "created_at": {
+      "$date": "2024-07-29T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff672"
+    },
+    "trainer_id": "TRN08",
+    "name": "Vivek Nair",
+    "email": "vivek.nair@gym.com",
+    "phone": "9845012348",
+    "password_hash": "$2b$04$8EjImvMwvOJjHJxfS9mRROp74QTeFUHSAlliF.iWvvUM2FYKlF6iK",
+    "role": "trainer",
+    "specialization": [
+      "CrossFit",
+      "Olympic Lifting"
+    ],
+    "certification": "CF-L2",
+    "experience_years": 8,
+    "availability": [
+      {
+        "day": "Thu",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      },
+      {
+        "day": "Fri",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      },
+      {
+        "day": "Mon",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      },
+      {
+        "day": "Wed",
+        "start_time": "12:00",
+        "end_time": "21:00"
+      }
+    ],
+    "created_at": {
+      "$date": "2024-08-28T00:00:00Z"
+    }
+  }
+]

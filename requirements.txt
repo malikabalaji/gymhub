@@ -1,0 +1,4 @@
+pymongo>=4.6
+bcrypt>=4.0
+mongomock>=4.1   # offline testing only
+pytest>=8.0      # tests only

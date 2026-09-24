@@ -1,0 +1,5588 @@
+[
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff987"
+    },
+    "payment_id": "PAY7001",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff673"
+    },
+    "member_name": "Harish Kumar",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff988"
+    },
+    "payment_id": "PAY7002",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff673"
+    },
+    "member_name": "Harish Kumar",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff989"
+    },
+    "payment_id": "PAY7003",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff673"
+    },
+    "member_name": "Harish Kumar",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff98a"
+    },
+    "payment_id": "PAY7004",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff673"
+    },
+    "member_name": "Harish Kumar",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff98b"
+    },
+    "payment_id": "PAY7005",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff674"
+    },
+    "member_name": "Swathi Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-06T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff98c"
+    },
+    "payment_id": "PAY7006",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff674"
+    },
+    "member_name": "Swathi Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff98d"
+    },
+    "payment_id": "PAY7007",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff674"
+    },
+    "member_name": "Swathi Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff98e"
+    },
+    "payment_id": "PAY7008",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff674"
+    },
+    "member_name": "Swathi Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff98f"
+    },
+    "payment_id": "PAY7009",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff675"
+    },
+    "member_name": "Harish Subramanian",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff990"
+    },
+    "payment_id": "PAY7010",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff675"
+    },
+    "member_name": "Harish Subramanian",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff991"
+    },
+    "payment_id": "PAY7011",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff675"
+    },
+    "member_name": "Harish Subramanian",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff992"
+    },
+    "payment_id": "PAY7012",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff675"
+    },
+    "member_name": "Harish Subramanian",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff993"
+    },
+    "payment_id": "PAY7013",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff676"
+    },
+    "member_name": "Ritika Reddy",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff994"
+    },
+    "payment_id": "PAY7014",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff676"
+    },
+    "member_name": "Ritika Reddy",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff995"
+    },
+    "payment_id": "PAY7015",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff677"
+    },
+    "member_name": "Rahul Rao",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff996"
+    },
+    "payment_id": "PAY7016",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff677"
+    },
+    "member_name": "Rahul Rao",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-06T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff997"
+    },
+    "payment_id": "PAY7017",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff678"
+    },
+    "member_name": "Divya Pillai",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff998"
+    },
+    "payment_id": "PAY7018",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff678"
+    },
+    "member_name": "Divya Pillai",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff999"
+    },
+    "payment_id": "PAY7019",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff679"
+    },
+    "member_name": "Vikram Das",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff99a"
+    },
+    "payment_id": "PAY7020",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff679"
+    },
+    "member_name": "Vikram Das",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff99b"
+    },
+    "payment_id": "PAY7021",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67a"
+    },
+    "member_name": "Isha Joshi",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-07T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff99c"
+    },
+    "payment_id": "PAY7022",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67a"
+    },
+    "member_name": "Isha Joshi",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-07T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff99d"
+    },
+    "payment_id": "PAY7023",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67a"
+    },
+    "member_name": "Isha Joshi",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff99e"
+    },
+    "payment_id": "PAY7024",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67a"
+    },
+    "member_name": "Isha Joshi",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff99f"
+    },
+    "payment_id": "PAY7025",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67b"
+    },
+    "member_name": "Gautham Bhat",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9a0"
+    },
+    "payment_id": "PAY7026",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67b"
+    },
+    "member_name": "Gautham Bhat",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9a1"
+    },
+    "payment_id": "PAY7027",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67b"
+    },
+    "member_name": "Gautham Bhat",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9a2"
+    },
+    "payment_id": "PAY7028",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67b"
+    },
+    "member_name": "Gautham Bhat",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9a3"
+    },
+    "payment_id": "PAY7029",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67c"
+    },
+    "member_name": "Sneha Pillai",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9a4"
+    },
+    "payment_id": "PAY7030",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67c"
+    },
+    "member_name": "Sneha Pillai",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9a5"
+    },
+    "payment_id": "PAY7031",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67c"
+    },
+    "member_name": "Sneha Pillai",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9a6"
+    },
+    "payment_id": "PAY7032",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67c"
+    },
+    "member_name": "Sneha Pillai",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9a7"
+    },
+    "payment_id": "PAY7033",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67d"
+    },
+    "member_name": "Manoj Reddy",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9a8"
+    },
+    "payment_id": "PAY7034",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67d"
+    },
+    "member_name": "Manoj Reddy",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9a9"
+    },
+    "payment_id": "PAY7035",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67d"
+    },
+    "member_name": "Manoj Reddy",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9aa"
+    },
+    "payment_id": "PAY7036",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67d"
+    },
+    "member_name": "Manoj Reddy",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9ab"
+    },
+    "payment_id": "PAY7037",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67e"
+    },
+    "member_name": "Isha Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9ac"
+    },
+    "payment_id": "PAY7038",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67e"
+    },
+    "member_name": "Isha Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-07T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9ad"
+    },
+    "payment_id": "PAY7039",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67e"
+    },
+    "member_name": "Isha Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9ae"
+    },
+    "payment_id": "PAY7040",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67e"
+    },
+    "member_name": "Isha Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9af"
+    },
+    "payment_id": "PAY7041",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67f"
+    },
+    "member_name": "Manoj Shetty",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9b0"
+    },
+    "payment_id": "PAY7042",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67f"
+    },
+    "member_name": "Manoj Shetty",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9b1"
+    },
+    "payment_id": "PAY7043",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67f"
+    },
+    "member_name": "Manoj Shetty",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9b2"
+    },
+    "payment_id": "PAY7044",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67f"
+    },
+    "member_name": "Manoj Shetty",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9b3"
+    },
+    "payment_id": "PAY7045",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff680"
+    },
+    "member_name": "Divya Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9b4"
+    },
+    "payment_id": "PAY7046",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff680"
+    },
+    "member_name": "Divya Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9b5"
+    },
+    "payment_id": "PAY7047",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff680"
+    },
+    "member_name": "Divya Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9b6"
+    },
+    "payment_id": "PAY7048",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff680"
+    },
+    "member_name": "Divya Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9b7"
+    },
+    "payment_id": "PAY7049",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff681"
+    },
+    "member_name": "Rahul Reddy",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9b8"
+    },
+    "payment_id": "PAY7050",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff681"
+    },
+    "member_name": "Rahul Reddy",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9b9"
+    },
+    "payment_id": "PAY7051",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff681"
+    },
+    "member_name": "Rahul Reddy",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9ba"
+    },
+    "payment_id": "PAY7052",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff681"
+    },
+    "member_name": "Rahul Reddy",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9bb"
+    },
+    "payment_id": "PAY7053",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff682"
+    },
+    "member_name": "Divya Menon",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9bc"
+    },
+    "payment_id": "PAY7054",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff682"
+    },
+    "member_name": "Divya Menon",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "overdue",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9bd"
+    },
+    "payment_id": "PAY7055",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff682"
+    },
+    "member_name": "Divya Menon",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9be"
+    },
+    "payment_id": "PAY7056",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff682"
+    },
+    "member_name": "Divya Menon",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9bf"
+    },
+    "payment_id": "PAY7057",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff683"
+    },
+    "member_name": "Varun Shetty",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9c0"
+    },
+    "payment_id": "PAY7058",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff683"
+    },
+    "member_name": "Varun Shetty",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9c1"
+    },
+    "payment_id": "PAY7059",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff684"
+    },
+    "member_name": "Aishwarya Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9c2"
+    },
+    "payment_id": "PAY7060",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff684"
+    },
+    "member_name": "Aishwarya Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-07T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9c3"
+    },
+    "payment_id": "PAY7061",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff684"
+    },
+    "member_name": "Aishwarya Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9c4"
+    },
+    "payment_id": "PAY7062",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff684"
+    },
+    "member_name": "Aishwarya Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9c5"
+    },
+    "payment_id": "PAY7063",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff685"
+    },
+    "member_name": "Siddharth Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9c6"
+    },
+    "payment_id": "PAY7064",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff685"
+    },
+    "member_name": "Siddharth Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-07T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9c7"
+    },
+    "payment_id": "PAY7065",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff685"
+    },
+    "member_name": "Siddharth Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9c8"
+    },
+    "payment_id": "PAY7066",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff685"
+    },
+    "member_name": "Siddharth Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9c9"
+    },
+    "payment_id": "PAY7067",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff686"
+    },
+    "member_name": "Keerthana Iyer",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9ca"
+    },
+    "payment_id": "PAY7068",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff686"
+    },
+    "member_name": "Keerthana Iyer",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9cb"
+    },
+    "payment_id": "PAY7069",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff686"
+    },
+    "member_name": "Keerthana Iyer",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9cc"
+    },
+    "payment_id": "PAY7070",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff686"
+    },
+    "member_name": "Keerthana Iyer",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9cd"
+    },
+    "payment_id": "PAY7071",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff687"
+    },
+    "member_name": "Karthik Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9ce"
+    },
+    "payment_id": "PAY7072",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff687"
+    },
+    "member_name": "Karthik Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9cf"
+    },
+    "payment_id": "PAY7073",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff687"
+    },
+    "member_name": "Karthik Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9d0"
+    },
+    "payment_id": "PAY7074",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff687"
+    },
+    "member_name": "Karthik Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9d1"
+    },
+    "payment_id": "PAY7075",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff688"
+    },
+    "member_name": "Swathi Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9d2"
+    },
+    "payment_id": "PAY7076",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff688"
+    },
+    "member_name": "Swathi Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9d3"
+    },
+    "payment_id": "PAY7077",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff688"
+    },
+    "member_name": "Swathi Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-06T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9d4"
+    },
+    "payment_id": "PAY7078",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff688"
+    },
+    "member_name": "Swathi Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9d5"
+    },
+    "payment_id": "PAY7079",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff689"
+    },
+    "member_name": "Siddharth Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9d6"
+    },
+    "payment_id": "PAY7080",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff689"
+    },
+    "member_name": "Siddharth Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9d7"
+    },
+    "payment_id": "PAY7081",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff689"
+    },
+    "member_name": "Siddharth Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9d8"
+    },
+    "payment_id": "PAY7082",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff689"
+    },
+    "member_name": "Siddharth Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9d9"
+    },
+    "payment_id": "PAY7083",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68a"
+    },
+    "member_name": "Ananya Das",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-06T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9da"
+    },
+    "payment_id": "PAY7084",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68a"
+    },
+    "member_name": "Ananya Das",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9db"
+    },
+    "payment_id": "PAY7085",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68a"
+    },
+    "member_name": "Ananya Das",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9dc"
+    },
+    "payment_id": "PAY7086",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68a"
+    },
+    "member_name": "Ananya Das",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9dd"
+    },
+    "payment_id": "PAY7087",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68b"
+    },
+    "member_name": "Vikram Kumar",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9de"
+    },
+    "payment_id": "PAY7088",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68b"
+    },
+    "member_name": "Vikram Kumar",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9df"
+    },
+    "payment_id": "PAY7089",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68b"
+    },
+    "member_name": "Vikram Kumar",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9e0"
+    },
+    "payment_id": "PAY7090",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68b"
+    },
+    "member_name": "Vikram Kumar",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9e1"
+    },
+    "payment_id": "PAY7091",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68c"
+    },
+    "member_name": "Meera Nair",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9e2"
+    },
+    "payment_id": "PAY7092",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68c"
+    },
+    "member_name": "Meera Nair",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9e3"
+    },
+    "payment_id": "PAY7093",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68d"
+    },
+    "member_name": "Pranav Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9e4"
+    },
+    "payment_id": "PAY7094",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68d"
+    },
+    "member_name": "Pranav Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9e5"
+    },
+    "payment_id": "PAY7095",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68d"
+    },
+    "member_name": "Pranav Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-06T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9e6"
+    },
+    "payment_id": "PAY7096",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68d"
+    },
+    "member_name": "Pranav Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9e7"
+    },
+    "payment_id": "PAY7097",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68e"
+    },
+    "member_name": "Lakshmi Krishnan",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9e8"
+    },
+    "payment_id": "PAY7098",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68e"
+    },
+    "member_name": "Lakshmi Krishnan",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9e9"
+    },
+    "payment_id": "PAY7099",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68e"
+    },
+    "member_name": "Lakshmi Krishnan",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9ea"
+    },
+    "payment_id": "PAY7100",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68e"
+    },
+    "member_name": "Lakshmi Krishnan",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9eb"
+    },
+    "payment_id": "PAY7101",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68f"
+    },
+    "member_name": "Siddharth Rao",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9ec"
+    },
+    "payment_id": "PAY7102",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68f"
+    },
+    "member_name": "Siddharth Rao",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9ed"
+    },
+    "payment_id": "PAY7103",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68f"
+    },
+    "member_name": "Siddharth Rao",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9ee"
+    },
+    "payment_id": "PAY7104",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68f"
+    },
+    "member_name": "Siddharth Rao",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9ef"
+    },
+    "payment_id": "PAY7105",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff690"
+    },
+    "member_name": "Meera Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-06T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9f0"
+    },
+    "payment_id": "PAY7106",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff690"
+    },
+    "member_name": "Meera Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9f1"
+    },
+    "payment_id": "PAY7107",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff690"
+    },
+    "member_name": "Meera Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9f2"
+    },
+    "payment_id": "PAY7108",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff690"
+    },
+    "member_name": "Meera Varma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9f3"
+    },
+    "payment_id": "PAY7109",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff691"
+    },
+    "member_name": "Pranav Nair",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9f4"
+    },
+    "payment_id": "PAY7110",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff691"
+    },
+    "member_name": "Pranav Nair",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9f5"
+    },
+    "payment_id": "PAY7111",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff691"
+    },
+    "member_name": "Pranav Nair",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9f6"
+    },
+    "payment_id": "PAY7112",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff691"
+    },
+    "member_name": "Pranav Nair",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9f7"
+    },
+    "payment_id": "PAY7113",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff692"
+    },
+    "member_name": "Ritika Menon",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-06T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9f8"
+    },
+    "payment_id": "PAY7114",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff692"
+    },
+    "member_name": "Ritika Menon",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9f9"
+    },
+    "payment_id": "PAY7115",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff692"
+    },
+    "member_name": "Ritika Menon",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9fa"
+    },
+    "payment_id": "PAY7116",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff692"
+    },
+    "member_name": "Ritika Menon",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9fb"
+    },
+    "payment_id": "PAY7117",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff693"
+    },
+    "member_name": "Rahul Sharma",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9fc"
+    },
+    "payment_id": "PAY7118",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff693"
+    },
+    "member_name": "Rahul Sharma",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9fd"
+    },
+    "payment_id": "PAY7119",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff693"
+    },
+    "member_name": "Rahul Sharma",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-06T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9fe"
+    },
+    "payment_id": "PAY7120",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff693"
+    },
+    "member_name": "Rahul Sharma",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff9ff"
+    },
+    "payment_id": "PAY7121",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff694"
+    },
+    "member_name": "Shreya Iyer",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa00"
+    },
+    "payment_id": "PAY7122",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff694"
+    },
+    "member_name": "Shreya Iyer",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-07T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa01"
+    },
+    "payment_id": "PAY7123",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff694"
+    },
+    "member_name": "Shreya Iyer",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa02"
+    },
+    "payment_id": "PAY7124",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff694"
+    },
+    "member_name": "Shreya Iyer",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa03"
+    },
+    "payment_id": "PAY7125",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff695"
+    },
+    "member_name": "Dev Varma",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-07T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa04"
+    },
+    "payment_id": "PAY7126",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff695"
+    },
+    "member_name": "Dev Varma",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa05"
+    },
+    "payment_id": "PAY7127",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff695"
+    },
+    "member_name": "Dev Varma",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa06"
+    },
+    "payment_id": "PAY7128",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff695"
+    },
+    "member_name": "Dev Varma",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa07"
+    },
+    "payment_id": "PAY7129",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff696"
+    },
+    "member_name": "Lakshmi Bhat",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa08"
+    },
+    "payment_id": "PAY7130",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff696"
+    },
+    "member_name": "Lakshmi Bhat",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa09"
+    },
+    "payment_id": "PAY7131",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff696"
+    },
+    "member_name": "Lakshmi Bhat",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa0a"
+    },
+    "payment_id": "PAY7132",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff696"
+    },
+    "member_name": "Lakshmi Bhat",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa0b"
+    },
+    "payment_id": "PAY7133",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff697"
+    },
+    "member_name": "Aditya Reddy",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa0c"
+    },
+    "payment_id": "PAY7134",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff697"
+    },
+    "member_name": "Aditya Reddy",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa0d"
+    },
+    "payment_id": "PAY7135",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff697"
+    },
+    "member_name": "Aditya Reddy",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa0e"
+    },
+    "payment_id": "PAY7136",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff697"
+    },
+    "member_name": "Aditya Reddy",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa0f"
+    },
+    "payment_id": "PAY7137",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff698"
+    },
+    "member_name": "Nandini Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa10"
+    },
+    "payment_id": "PAY7138",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff698"
+    },
+    "member_name": "Nandini Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-07T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa11"
+    },
+    "payment_id": "PAY7139",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff698"
+    },
+    "member_name": "Nandini Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa12"
+    },
+    "payment_id": "PAY7140",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff698"
+    },
+    "member_name": "Nandini Das",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa13"
+    },
+    "payment_id": "PAY7141",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff699"
+    },
+    "member_name": "Gautham Joshi",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-07T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa14"
+    },
+    "payment_id": "PAY7142",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff699"
+    },
+    "member_name": "Gautham Joshi",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-06T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa15"
+    },
+    "payment_id": "PAY7143",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff699"
+    },
+    "member_name": "Gautham Joshi",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-07T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa16"
+    },
+    "payment_id": "PAY7144",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff699"
+    },
+    "member_name": "Gautham Joshi",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa17"
+    },
+    "payment_id": "PAY7145",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69a"
+    },
+    "member_name": "Sneha Kumar",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa18"
+    },
+    "payment_id": "PAY7146",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69a"
+    },
+    "member_name": "Sneha Kumar",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa19"
+    },
+    "payment_id": "PAY7147",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69a"
+    },
+    "member_name": "Sneha Kumar",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa1a"
+    },
+    "payment_id": "PAY7148",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69a"
+    },
+    "member_name": "Sneha Kumar",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa1b"
+    },
+    "payment_id": "PAY7149",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69b"
+    },
+    "member_name": "Arjun Rao",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa1c"
+    },
+    "payment_id": "PAY7150",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69b"
+    },
+    "member_name": "Arjun Rao",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-07T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa1d"
+    },
+    "payment_id": "PAY7151",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69b"
+    },
+    "member_name": "Arjun Rao",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa1e"
+    },
+    "payment_id": "PAY7152",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69b"
+    },
+    "member_name": "Arjun Rao",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa1f"
+    },
+    "payment_id": "PAY7153",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69c"
+    },
+    "member_name": "Divya Kumar",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa20"
+    },
+    "payment_id": "PAY7154",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69c"
+    },
+    "member_name": "Divya Kumar",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa21"
+    },
+    "payment_id": "PAY7155",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69d"
+    },
+    "member_name": "Gautham Nair",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-06T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa22"
+    },
+    "payment_id": "PAY7156",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69d"
+    },
+    "member_name": "Gautham Nair",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa23"
+    },
+    "payment_id": "PAY7157",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69d"
+    },
+    "member_name": "Gautham Nair",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa24"
+    },
+    "payment_id": "PAY7158",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69d"
+    },
+    "member_name": "Gautham Nair",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa25"
+    },
+    "payment_id": "PAY7159",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69e"
+    },
+    "member_name": "Kavya Kumar",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa26"
+    },
+    "payment_id": "PAY7160",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69e"
+    },
+    "member_name": "Kavya Kumar",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa27"
+    },
+    "payment_id": "PAY7161",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69e"
+    },
+    "member_name": "Kavya Kumar",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa28"
+    },
+    "payment_id": "PAY7162",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69e"
+    },
+    "member_name": "Kavya Kumar",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa29"
+    },
+    "payment_id": "PAY7163",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69f"
+    },
+    "member_name": "Siddharth Pillai",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa2a"
+    },
+    "payment_id": "PAY7164",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69f"
+    },
+    "member_name": "Siddharth Pillai",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa2b"
+    },
+    "payment_id": "PAY7165",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69f"
+    },
+    "member_name": "Siddharth Pillai",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa2c"
+    },
+    "payment_id": "PAY7166",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69f"
+    },
+    "member_name": "Siddharth Pillai",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa2d"
+    },
+    "payment_id": "PAY7167",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a0"
+    },
+    "member_name": "Nandini Menon",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa2e"
+    },
+    "payment_id": "PAY7168",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a0"
+    },
+    "member_name": "Nandini Menon",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa2f"
+    },
+    "payment_id": "PAY7169",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a0"
+    },
+    "member_name": "Nandini Menon",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa30"
+    },
+    "payment_id": "PAY7170",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a0"
+    },
+    "member_name": "Nandini Menon",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa31"
+    },
+    "payment_id": "PAY7171",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a1"
+    },
+    "member_name": "Varun Das",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-07T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa32"
+    },
+    "payment_id": "PAY7172",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a1"
+    },
+    "member_name": "Varun Das",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-07T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa33"
+    },
+    "payment_id": "PAY7173",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a1"
+    },
+    "member_name": "Varun Das",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa34"
+    },
+    "payment_id": "PAY7174",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a1"
+    },
+    "member_name": "Varun Das",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa35"
+    },
+    "payment_id": "PAY7175",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a2"
+    },
+    "member_name": "Nandini Sharma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa36"
+    },
+    "payment_id": "PAY7176",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a2"
+    },
+    "member_name": "Nandini Sharma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa37"
+    },
+    "payment_id": "PAY7177",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a2"
+    },
+    "member_name": "Nandini Sharma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa38"
+    },
+    "payment_id": "PAY7178",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a2"
+    },
+    "member_name": "Nandini Sharma",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa39"
+    },
+    "payment_id": "PAY7179",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a3"
+    },
+    "member_name": "Ashwin Krishnan",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa3a"
+    },
+    "payment_id": "PAY7180",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a3"
+    },
+    "member_name": "Ashwin Krishnan",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa3b"
+    },
+    "payment_id": "PAY7181",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a3"
+    },
+    "member_name": "Ashwin Krishnan",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa3c"
+    },
+    "payment_id": "PAY7182",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a3"
+    },
+    "member_name": "Ashwin Krishnan",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa3d"
+    },
+    "payment_id": "PAY7183",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a4"
+    },
+    "member_name": "Aishwarya Menon",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa3e"
+    },
+    "payment_id": "PAY7184",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a4"
+    },
+    "member_name": "Aishwarya Menon",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa3f"
+    },
+    "payment_id": "PAY7185",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a5"
+    },
+    "member_name": "Karthik Shetty",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-06T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa40"
+    },
+    "payment_id": "PAY7186",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a5"
+    },
+    "member_name": "Karthik Shetty",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-07T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa41"
+    },
+    "payment_id": "PAY7187",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a5"
+    },
+    "member_name": "Karthik Shetty",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa42"
+    },
+    "payment_id": "PAY7188",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a5"
+    },
+    "member_name": "Karthik Shetty",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa43"
+    },
+    "payment_id": "PAY7189",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a6"
+    },
+    "member_name": "Isha Nair",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa44"
+    },
+    "payment_id": "PAY7190",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a6"
+    },
+    "member_name": "Isha Nair",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa45"
+    },
+    "payment_id": "PAY7191",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a6"
+    },
+    "member_name": "Isha Nair",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa46"
+    },
+    "payment_id": "PAY7192",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a6"
+    },
+    "member_name": "Isha Nair",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa47"
+    },
+    "payment_id": "PAY7193",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a7"
+    },
+    "member_name": "Karthik Krishnan",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-06T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa48"
+    },
+    "payment_id": "PAY7194",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a7"
+    },
+    "member_name": "Karthik Krishnan",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa49"
+    },
+    "payment_id": "PAY7195",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a7"
+    },
+    "member_name": "Karthik Krishnan",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa4a"
+    },
+    "payment_id": "PAY7196",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a7"
+    },
+    "member_name": "Karthik Krishnan",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa4b"
+    },
+    "payment_id": "PAY7197",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a8"
+    },
+    "member_name": "Keerthana Krishnan",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa4c"
+    },
+    "payment_id": "PAY7198",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a8"
+    },
+    "member_name": "Keerthana Krishnan",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa4d"
+    },
+    "payment_id": "PAY7199",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a8"
+    },
+    "member_name": "Keerthana Krishnan",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa4e"
+    },
+    "payment_id": "PAY7200",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a8"
+    },
+    "member_name": "Keerthana Krishnan",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa4f"
+    },
+    "payment_id": "PAY7201",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a9"
+    },
+    "member_name": "Ashwin Bhat",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa50"
+    },
+    "payment_id": "PAY7202",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a9"
+    },
+    "member_name": "Ashwin Bhat",
+    "amount": 4000,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa51"
+    },
+    "payment_id": "PAY7203",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6aa"
+    },
+    "member_name": "Meera Bhat",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa52"
+    },
+    "payment_id": "PAY7204",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6aa"
+    },
+    "member_name": "Meera Bhat",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa53"
+    },
+    "payment_id": "PAY7205",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ab"
+    },
+    "member_name": "Ashwin Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa54"
+    },
+    "payment_id": "PAY7206",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ab"
+    },
+    "member_name": "Ashwin Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa55"
+    },
+    "payment_id": "PAY7207",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ab"
+    },
+    "member_name": "Ashwin Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-03T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa56"
+    },
+    "payment_id": "PAY7208",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ab"
+    },
+    "member_name": "Ashwin Sharma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa57"
+    },
+    "payment_id": "PAY7209",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ac"
+    },
+    "member_name": "Pooja Varma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "cash",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa58"
+    },
+    "payment_id": "PAY7210",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ac"
+    },
+    "member_name": "Pooja Varma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-06T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa59"
+    },
+    "payment_id": "PAY7211",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ac"
+    },
+    "member_name": "Pooja Varma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-06T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa5a"
+    },
+    "payment_id": "PAY7212",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ac"
+    },
+    "member_name": "Pooja Varma",
+    "amount": 2500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa5b"
+    },
+    "payment_id": "PAY7213",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ad"
+    },
+    "member_name": "Gautham Subramanian",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-02T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa5c"
+    },
+    "payment_id": "PAY7214",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ad"
+    },
+    "member_name": "Gautham Subramanian",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa5d"
+    },
+    "payment_id": "PAY7215",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ad"
+    },
+    "member_name": "Gautham Subramanian",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "card",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa5e"
+    },
+    "payment_id": "PAY7216",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ad"
+    },
+    "member_name": "Gautham Subramanian",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa5f"
+    },
+    "payment_id": "PAY7217",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ae"
+    },
+    "member_name": "Pooja Pillai",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-07-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-07-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-07-04T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-07-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa60"
+    },
+    "payment_id": "PAY7218",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ae"
+    },
+    "member_name": "Pooja Pillai",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-08-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-08-31T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-08-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa61"
+    },
+    "payment_id": "PAY7219",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ae"
+    },
+    "member_name": "Pooja Pillai",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": "UPI",
+    "status": "paid",
+    "billing_period_start": {
+      "$date": "2026-09-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-09-30T00:00:00Z"
+    },
+    "payment_date": {
+      "$date": "2026-09-08T00:00:00Z"
+    },
+    "due_date": {
+      "$date": "2026-09-05T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdffa62"
+    },
+    "payment_id": "PAY7220",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ae"
+    },
+    "member_name": "Pooja Pillai",
+    "amount": 1500,
+    "currency": "INR",
+    "payment_mode": null,
+    "status": "pending",
+    "billing_period_start": {
+      "$date": "2026-10-01T00:00:00Z"
+    },
+    "billing_period_end": {
+      "$date": "2026-10-31T00:00:00Z"
+    },
+    "payment_date": null,
+    "due_date": {
+      "$date": "2026-10-05T00:00:00Z"
+    }
+  }
+]

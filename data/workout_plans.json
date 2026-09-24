@@ -1,0 +1,4334 @@
+[
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6af"
+    },
+    "plan_id": "WP5001",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff673"
+    },
+    "member_name": "Harish Kumar",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66b"
+    },
+    "trainer_name": "Priya Menon",
+    "goal": "Flexibility",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Plank",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Sun Salutation",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Cat-Cow Stretch",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Hip Opener Flow",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6b0"
+    },
+    "plan_id": "WP5002",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff674"
+    },
+    "member_name": "Swathi Sharma",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Strength",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Deadlift",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 80,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Bench Press",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 60,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Pull Ups",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Squat",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 75,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6b1"
+    },
+    "plan_id": "WP5003",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff675"
+    },
+    "member_name": "Harish Subramanian",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Muscle Gain",
+    "duration_weeks": 6,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Bicep Curl",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 10,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Barbell Row",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 40,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Deadlift",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 60,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Squat",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 55,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6b2"
+    },
+    "plan_id": "WP5004",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff676"
+    },
+    "member_name": "Ritika Reddy",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_name": "Sanjay Pillai",
+    "goal": "Flexibility",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Cat-Cow Stretch",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Hamstring Stretch",
+        "sets": 5,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Sun Salutation",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Hip Opener Flow",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-05-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6b3"
+    },
+    "plan_id": "WP5005",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff677"
+    },
+    "member_name": "Rahul Rao",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff672"
+    },
+    "trainer_name": "Vivek Nair",
+    "goal": "Weight Loss",
+    "duration_weeks": 12,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Rowing Machine",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Mountain Climbers",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Burpees",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Jump Squats",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2025-12-21T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2025-12-21T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6b4"
+    },
+    "plan_id": "WP5006",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff677"
+    },
+    "member_name": "Rahul Rao",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff672"
+    },
+    "trainer_name": "Vivek Nair",
+    "goal": "Flexibility",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Cat-Cow Stretch",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Hip Opener Flow",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Plank",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Hamstring Stretch",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6b5"
+    },
+    "plan_id": "WP5007",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff678"
+    },
+    "member_name": "Divya Pillai",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_name": "Sanjay Pillai",
+    "goal": "Endurance",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Treadmill Intervals",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Rowing Machine",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Plank",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Lunges",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 13,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-04-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-04-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6b6"
+    },
+    "plan_id": "WP5008",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff679"
+    },
+    "member_name": "Vikram Das",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Strength",
+    "duration_weeks": 8,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Bench Press",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 55,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Squat",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 75,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Pull Ups",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Deadlift",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 90,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-03-23T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-23T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6b7"
+    },
+    "plan_id": "WP5009",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff679"
+    },
+    "member_name": "Vikram Das",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Strength",
+    "duration_weeks": 8,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Pull Ups",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Farmer Walk",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 24,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Squat",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 70,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Bench Press",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 60,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6b8"
+    },
+    "plan_id": "WP5010",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67a"
+    },
+    "member_name": "Isha Joshi",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_name": "Sanjay Pillai",
+    "goal": "Endurance",
+    "duration_weeks": 12,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Wed",
+        "exercise_name": "Treadmill Intervals",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Box Jumps",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Plank",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Cycling",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-03-23T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-23T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6b9"
+    },
+    "plan_id": "WP5011",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67a"
+    },
+    "member_name": "Isha Joshi",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_name": "Sanjay Pillai",
+    "goal": "Muscle Gain",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Bicep Curl",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 20,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Barbell Row",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 45,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Deadlift",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 70,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Overhead Press",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 25,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ba"
+    },
+    "plan_id": "WP5012",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67b"
+    },
+    "member_name": "Gautham Bhat",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66c"
+    },
+    "trainer_name": "Rohit Sharma",
+    "goal": "Strength",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Farmer Walk",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 29,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Bench Press",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 55,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Pull Ups",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Squat",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 70,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6bb"
+    },
+    "plan_id": "WP5013",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67c"
+    },
+    "member_name": "Sneha Pillai",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff672"
+    },
+    "trainer_name": "Vivek Nair",
+    "goal": "Weight Loss",
+    "duration_weeks": 6,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Jump Squats",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Rowing Machine",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Mountain Climbers",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Burpees",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-01-21T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-01-21T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6bc"
+    },
+    "plan_id": "WP5014",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67c"
+    },
+    "member_name": "Sneha Pillai",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff672"
+    },
+    "trainer_name": "Vivek Nair",
+    "goal": "Strength",
+    "duration_weeks": 6,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Bench Press",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 60,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Deadlift",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 80,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Squat",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 70,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Pull Ups",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-04-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-04-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6bd"
+    },
+    "plan_id": "WP5015",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67d"
+    },
+    "member_name": "Manoj Reddy",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff670"
+    },
+    "trainer_name": "Farhan Ali",
+    "goal": "Weight Loss",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Kettlebell Swing",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 12,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Mountain Climbers",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Treadmill Intervals",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Rowing Machine",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6be"
+    },
+    "plan_id": "WP5016",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67e"
+    },
+    "member_name": "Isha Das",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_name": "Sanjay Pillai",
+    "goal": "Flexibility",
+    "duration_weeks": 8,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Hip Opener Flow",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Sun Salutation",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Plank",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Hamstring Stretch",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2025-11-23T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2025-11-23T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6bf"
+    },
+    "plan_id": "WP5017",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67e"
+    },
+    "member_name": "Isha Das",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_name": "Sanjay Pillai",
+    "goal": "Endurance",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Plank",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Cycling",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Rowing Machine",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Treadmill Intervals",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6c0"
+    },
+    "plan_id": "WP5018",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff67f"
+    },
+    "member_name": "Manoj Shetty",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Strength",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Farmer Walk",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 34,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Bench Press",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 60,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Pull Ups",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Squat",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 80,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6c1"
+    },
+    "plan_id": "WP5019",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff680"
+    },
+    "member_name": "Divya Das",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66c"
+    },
+    "trainer_name": "Rohit Sharma",
+    "goal": "Endurance",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Wed",
+        "exercise_name": "Treadmill Intervals",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Cycling",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Lunges",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 18,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Rowing Machine",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6c2"
+    },
+    "plan_id": "WP5020",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff681"
+    },
+    "member_name": "Rahul Reddy",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff671"
+    },
+    "trainer_name": "Kavitha Reddy",
+    "goal": "Endurance",
+    "duration_weeks": 6,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Plank",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Lunges",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 18,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Box Jumps",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Rowing Machine",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6c3"
+    },
+    "plan_id": "WP5021",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff682"
+    },
+    "member_name": "Divya Menon",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff670"
+    },
+    "trainer_name": "Farhan Ali",
+    "goal": "Flexibility",
+    "duration_weeks": 8,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Hip Opener Flow",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Cat-Cow Stretch",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Sun Salutation",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Plank",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6c4"
+    },
+    "plan_id": "WP5022",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff683"
+    },
+    "member_name": "Varun Shetty",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff671"
+    },
+    "trainer_name": "Kavitha Reddy",
+    "goal": "Flexibility",
+    "duration_weeks": 8,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Hamstring Stretch",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Sun Salutation",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Hip Opener Flow",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Plank",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2025-10-23T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2025-10-23T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6c5"
+    },
+    "plan_id": "WP5023",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff683"
+    },
+    "member_name": "Varun Shetty",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff671"
+    },
+    "trainer_name": "Kavitha Reddy",
+    "goal": "Flexibility",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Hip Opener Flow",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Hamstring Stretch",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Plank",
+        "sets": 5,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Sun Salutation",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6c6"
+    },
+    "plan_id": "WP5024",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff684"
+    },
+    "member_name": "Aishwarya Das",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff671"
+    },
+    "trainer_name": "Kavitha Reddy",
+    "goal": "Muscle Gain",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Deadlift",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 60,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Overhead Press",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 30,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Bicep Curl",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 15,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Barbell Row",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 35,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6c7"
+    },
+    "plan_id": "WP5025",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff685"
+    },
+    "member_name": "Siddharth Varma",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66b"
+    },
+    "trainer_name": "Priya Menon",
+    "goal": "Muscle Gain",
+    "duration_weeks": 6,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Squat",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 60,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Barbell Row",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 45,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Deadlift",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 60,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Bench Press",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 50,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6c8"
+    },
+    "plan_id": "WP5026",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff686"
+    },
+    "member_name": "Keerthana Iyer",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff670"
+    },
+    "trainer_name": "Farhan Ali",
+    "goal": "Muscle Gain",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Overhead Press",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 35,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Squat",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 60,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Bicep Curl",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 20,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Deadlift",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 70,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6c9"
+    },
+    "plan_id": "WP5027",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff687"
+    },
+    "member_name": "Karthik Sharma",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_name": "Sanjay Pillai",
+    "goal": "Endurance",
+    "duration_weeks": 6,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Rowing Machine",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Lunges",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 13,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Plank",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Treadmill Intervals",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-04-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-04-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ca"
+    },
+    "plan_id": "WP5028",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff688"
+    },
+    "member_name": "Swathi Varma",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66b"
+    },
+    "trainer_name": "Priya Menon",
+    "goal": "Endurance",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Plank",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Cycling",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Rowing Machine",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Lunges",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 18,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-05-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6cb"
+    },
+    "plan_id": "WP5029",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff689"
+    },
+    "member_name": "Siddharth Sharma",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66f"
+    },
+    "trainer_name": "Meenakshi Iyer",
+    "goal": "Strength",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Squat",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 80,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Deadlift",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 85,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Farmer Walk",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 34,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Bench Press",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 60,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6cc"
+    },
+    "plan_id": "WP5030",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68a"
+    },
+    "member_name": "Ananya Das",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Muscle Gain",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Bicep Curl",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 10,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Barbell Row",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 35,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Bench Press",
+        "sets": 5,
+        "reps": 10,
+        "weight_kg": 45,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Deadlift",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 70,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6cd"
+    },
+    "plan_id": "WP5031",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68b"
+    },
+    "member_name": "Vikram Kumar",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff672"
+    },
+    "trainer_name": "Vivek Nair",
+    "goal": "Muscle Gain",
+    "duration_weeks": 10,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Bicep Curl",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 15,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Barbell Row",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 40,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Overhead Press",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 25,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Deadlift",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 65,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2025-12-21T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2025-12-21T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ce"
+    },
+    "plan_id": "WP5032",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68b"
+    },
+    "member_name": "Vikram Kumar",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff672"
+    },
+    "trainer_name": "Vivek Nair",
+    "goal": "Endurance",
+    "duration_weeks": 6,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Rowing Machine",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Box Jumps",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Plank",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Treadmill Intervals",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6cf"
+    },
+    "plan_id": "WP5033",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68c"
+    },
+    "member_name": "Meera Nair",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff671"
+    },
+    "trainer_name": "Kavitha Reddy",
+    "goal": "Strength",
+    "duration_weeks": 6,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Pull Ups",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Farmer Walk",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 29,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Squat",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 80,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Deadlift",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 80,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6d0"
+    },
+    "plan_id": "WP5034",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68d"
+    },
+    "member_name": "Pranav Varma",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_name": "Sanjay Pillai",
+    "goal": "Endurance",
+    "duration_weeks": 10,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Cycling",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Treadmill Intervals",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Rowing Machine",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Box Jumps",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2025-12-21T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2025-12-21T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6d1"
+    },
+    "plan_id": "WP5035",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68d"
+    },
+    "member_name": "Pranav Varma",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_name": "Sanjay Pillai",
+    "goal": "Flexibility",
+    "duration_weeks": 8,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Cat-Cow Stretch",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Sun Salutation",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Hip Opener Flow",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Plank",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6d2"
+    },
+    "plan_id": "WP5036",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68e"
+    },
+    "member_name": "Lakshmi Krishnan",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66c"
+    },
+    "trainer_name": "Rohit Sharma",
+    "goal": "Muscle Gain",
+    "duration_weeks": 6,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Bicep Curl",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 15,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Bench Press",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 50,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Squat",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 50,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Overhead Press",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 30,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-02-20T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-20T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6d3"
+    },
+    "plan_id": "WP5037",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68e"
+    },
+    "member_name": "Lakshmi Krishnan",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66c"
+    },
+    "trainer_name": "Rohit Sharma",
+    "goal": "Flexibility",
+    "duration_weeks": 6,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Sun Salutation",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Hamstring Stretch",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Cat-Cow Stretch",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Plank",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-05-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6d4"
+    },
+    "plan_id": "WP5038",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68f"
+    },
+    "member_name": "Siddharth Rao",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66f"
+    },
+    "trainer_name": "Meenakshi Iyer",
+    "goal": "Muscle Gain",
+    "duration_weeks": 6,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Deadlift",
+        "sets": 5,
+        "reps": 10,
+        "weight_kg": 60,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Bench Press",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 40,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Bicep Curl",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 15,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Squat",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 55,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-03-23T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-23T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6d5"
+    },
+    "plan_id": "WP5039",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff68f"
+    },
+    "member_name": "Siddharth Rao",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66f"
+    },
+    "trainer_name": "Meenakshi Iyer",
+    "goal": "Muscle Gain",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Squat",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 60,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Bicep Curl",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 10,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Deadlift",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 65,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Barbell Row",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 40,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6d6"
+    },
+    "plan_id": "WP5040",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff690"
+    },
+    "member_name": "Meera Varma",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Weight Loss",
+    "duration_weeks": 8,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Rowing Machine",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Mountain Climbers",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Burpees",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Kettlebell Swing",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 12,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6d7"
+    },
+    "plan_id": "WP5041",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff691"
+    },
+    "member_name": "Pranav Nair",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff670"
+    },
+    "trainer_name": "Farhan Ali",
+    "goal": "Muscle Gain",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Deadlift",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 70,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Barbell Row",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 40,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Bench Press",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 45,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Bicep Curl",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 15,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6d8"
+    },
+    "plan_id": "WP5042",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff692"
+    },
+    "member_name": "Ritika Menon",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66c"
+    },
+    "trainer_name": "Rohit Sharma",
+    "goal": "Strength",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Squat",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 80,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Bench Press",
+        "sets": 5,
+        "reps": 10,
+        "weight_kg": 60,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Pull Ups",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Farmer Walk",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 29,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6d9"
+    },
+    "plan_id": "WP5043",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff693"
+    },
+    "member_name": "Rahul Sharma",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff672"
+    },
+    "trainer_name": "Vivek Nair",
+    "goal": "Strength",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Squat",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 70,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Deadlift",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 80,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Bench Press",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 65,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Pull Ups",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-04-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-04-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6da"
+    },
+    "plan_id": "WP5044",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff694"
+    },
+    "member_name": "Shreya Iyer",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff671"
+    },
+    "trainer_name": "Kavitha Reddy",
+    "goal": "Muscle Gain",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Bicep Curl",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 10,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Barbell Row",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 40,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Squat",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 50,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Bench Press",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 50,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-04-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-04-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6db"
+    },
+    "plan_id": "WP5045",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff695"
+    },
+    "member_name": "Dev Varma",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff672"
+    },
+    "trainer_name": "Vivek Nair",
+    "goal": "Endurance",
+    "duration_weeks": 8,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Rowing Machine",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Plank",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Lunges",
+        "sets": 5,
+        "reps": 10,
+        "weight_kg": 8,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Box Jumps",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6dc"
+    },
+    "plan_id": "WP5046",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff696"
+    },
+    "member_name": "Lakshmi Bhat",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Weight Loss",
+    "duration_weeks": 8,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Kettlebell Swing",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 22,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Burpees",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Treadmill Intervals",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Rowing Machine",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-05-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6dd"
+    },
+    "plan_id": "WP5047",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff697"
+    },
+    "member_name": "Aditya Reddy",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Flexibility",
+    "duration_weeks": 10,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Hip Opener Flow",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Plank",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Hamstring Stretch",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Cat-Cow Stretch",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-01-21T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-01-21T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6de"
+    },
+    "plan_id": "WP5048",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff697"
+    },
+    "member_name": "Aditya Reddy",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Muscle Gain",
+    "duration_weeks": 8,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Bicep Curl",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 10,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Overhead Press",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 35,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Bench Press",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 50,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Squat",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 60,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-04-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-04-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6df"
+    },
+    "plan_id": "WP5049",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff698"
+    },
+    "member_name": "Nandini Das",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff670"
+    },
+    "trainer_name": "Farhan Ali",
+    "goal": "Muscle Gain",
+    "duration_weeks": 6,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Squat",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 55,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Bicep Curl",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 10,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Deadlift",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 60,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Bench Press",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 40,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-01-21T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-01-21T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6e0"
+    },
+    "plan_id": "WP5050",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff698"
+    },
+    "member_name": "Nandini Das",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff670"
+    },
+    "trainer_name": "Farhan Ali",
+    "goal": "Endurance",
+    "duration_weeks": 6,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Box Jumps",
+        "sets": 5,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Rowing Machine",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Lunges",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 8,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Cycling",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-04-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-04-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6e1"
+    },
+    "plan_id": "WP5051",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff699"
+    },
+    "member_name": "Gautham Joshi",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff670"
+    },
+    "trainer_name": "Farhan Ali",
+    "goal": "Weight Loss",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Burpees",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Mountain Climbers",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Rowing Machine",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Treadmill Intervals",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-05-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6e2"
+    },
+    "plan_id": "WP5052",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69a"
+    },
+    "member_name": "Sneha Kumar",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff671"
+    },
+    "trainer_name": "Kavitha Reddy",
+    "goal": "Endurance",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Plank",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Box Jumps",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Lunges",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 13,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Rowing Machine",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6e3"
+    },
+    "plan_id": "WP5053",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69b"
+    },
+    "member_name": "Arjun Rao",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_name": "Sanjay Pillai",
+    "goal": "Muscle Gain",
+    "duration_weeks": 6,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Squat",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 55,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Overhead Press",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 35,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Bench Press",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 45,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Barbell Row",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 35,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6e4"
+    },
+    "plan_id": "WP5054",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69c"
+    },
+    "member_name": "Divya Kumar",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff670"
+    },
+    "trainer_name": "Farhan Ali",
+    "goal": "Endurance",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Treadmill Intervals",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Rowing Machine",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Box Jumps",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Cycling",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6e5"
+    },
+    "plan_id": "WP5055",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69d"
+    },
+    "member_name": "Gautham Nair",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Endurance",
+    "duration_weeks": 8,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Cycling",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Rowing Machine",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Plank",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Treadmill Intervals",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6e6"
+    },
+    "plan_id": "WP5056",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69e"
+    },
+    "member_name": "Kavya Kumar",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff670"
+    },
+    "trainer_name": "Farhan Ali",
+    "goal": "Flexibility",
+    "duration_weeks": 8,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Hip Opener Flow",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Sun Salutation",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Hamstring Stretch",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Plank",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6e7"
+    },
+    "plan_id": "WP5057",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69f"
+    },
+    "member_name": "Siddharth Pillai",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff672"
+    },
+    "trainer_name": "Vivek Nair",
+    "goal": "Strength",
+    "duration_weeks": 6,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Farmer Walk",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 24,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Pull Ups",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Squat",
+        "sets": 5,
+        "reps": 10,
+        "weight_kg": 80,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Deadlift",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 85,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2025-12-21T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2025-12-21T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6e8"
+    },
+    "plan_id": "WP5058",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff69f"
+    },
+    "member_name": "Siddharth Pillai",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff672"
+    },
+    "trainer_name": "Vivek Nair",
+    "goal": "Weight Loss",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Jump Squats",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Rowing Machine",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Burpees",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Kettlebell Swing",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 12,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6e9"
+    },
+    "plan_id": "WP5059",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a0"
+    },
+    "member_name": "Nandini Menon",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66b"
+    },
+    "trainer_name": "Priya Menon",
+    "goal": "Weight Loss",
+    "duration_weeks": 10,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Kettlebell Swing",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 12,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Jump Squats",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Rowing Machine",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Burpees",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2025-12-21T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2025-12-21T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ea"
+    },
+    "plan_id": "WP5060",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a0"
+    },
+    "member_name": "Nandini Menon",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66b"
+    },
+    "trainer_name": "Priya Menon",
+    "goal": "Endurance",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Rowing Machine",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Cycling",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Box Jumps",
+        "sets": 5,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Plank",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6eb"
+    },
+    "plan_id": "WP5061",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a1"
+    },
+    "member_name": "Varun Das",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66c"
+    },
+    "trainer_name": "Rohit Sharma",
+    "goal": "Weight Loss",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Rowing Machine",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Burpees",
+        "sets": 5,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Kettlebell Swing",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 12,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Jump Squats",
+        "sets": 5,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ec"
+    },
+    "plan_id": "WP5062",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a2"
+    },
+    "member_name": "Nandini Sharma",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Endurance",
+    "duration_weeks": 6,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Rowing Machine",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Lunges",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 13,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Plank",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Treadmill Intervals",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-03-23T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-23T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ed"
+    },
+    "plan_id": "WP5063",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a2"
+    },
+    "member_name": "Nandini Sharma",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Endurance",
+    "duration_weeks": 6,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Lunges",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 13,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Cycling",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Box Jumps",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Plank",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ee"
+    },
+    "plan_id": "WP5064",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a3"
+    },
+    "member_name": "Ashwin Krishnan",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_name": "Sanjay Pillai",
+    "goal": "Strength",
+    "duration_weeks": 6,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Bench Press",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 55,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Deadlift",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 90,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Squat",
+        "sets": 5,
+        "reps": 10,
+        "weight_kg": 75,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Pull Ups",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ef"
+    },
+    "plan_id": "WP5065",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a4"
+    },
+    "member_name": "Aishwarya Menon",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff671"
+    },
+    "trainer_name": "Kavitha Reddy",
+    "goal": "Strength",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Pull Ups",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Deadlift",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 85,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Farmer Walk",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 29,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Bench Press",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 65,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6f0"
+    },
+    "plan_id": "WP5066",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a5"
+    },
+    "member_name": "Karthik Shetty",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66b"
+    },
+    "trainer_name": "Priya Menon",
+    "goal": "Weight Loss",
+    "duration_weeks": 8,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Kettlebell Swing",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 22,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Mountain Climbers",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Burpees",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Jump Squats",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-05-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6f1"
+    },
+    "plan_id": "WP5067",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a6"
+    },
+    "member_name": "Isha Nair",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Weight Loss",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Wed",
+        "exercise_name": "Burpees",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Jump Squats",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Mountain Climbers",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Kettlebell Swing",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 17,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6f2"
+    },
+    "plan_id": "WP5068",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a7"
+    },
+    "member_name": "Karthik Krishnan",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff670"
+    },
+    "trainer_name": "Farhan Ali",
+    "goal": "Strength",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Deadlift",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 90,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Bench Press",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 65,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Pull Ups",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Squat",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 75,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6f3"
+    },
+    "plan_id": "WP5069",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a8"
+    },
+    "member_name": "Keerthana Krishnan",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66b"
+    },
+    "trainer_name": "Priya Menon",
+    "goal": "Flexibility",
+    "duration_weeks": 6,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Sun Salutation",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Plank",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Hip Opener Flow",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Cat-Cow Stretch",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6f4"
+    },
+    "plan_id": "WP5070",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a9"
+    },
+    "member_name": "Ashwin Bhat",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_name": "Sanjay Pillai",
+    "goal": "Flexibility",
+    "duration_weeks": 12,
+    "status": "completed",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Cat-Cow Stretch",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Sun Salutation",
+        "sets": 4,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Hip Opener Flow",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Hamstring Stretch",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2025-12-21T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2025-12-21T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6f5"
+    },
+    "plan_id": "WP5071",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6a9"
+    },
+    "member_name": "Ashwin Bhat",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_name": "Sanjay Pillai",
+    "goal": "Flexibility",
+    "duration_weeks": 6,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Wed",
+        "exercise_name": "Plank",
+        "sets": 5,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Cat-Cow Stretch",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Hamstring Stretch",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Sun Salutation",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6f6"
+    },
+    "plan_id": "WP5072",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6aa"
+    },
+    "member_name": "Meera Bhat",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66d"
+    },
+    "trainer_name": "Deepa Krishnan",
+    "goal": "Endurance",
+    "duration_weeks": 10,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Cycling",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Plank",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Lunges",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 13,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Rowing Machine",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6f7"
+    },
+    "plan_id": "WP5073",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ab"
+    },
+    "member_name": "Ashwin Sharma",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff672"
+    },
+    "trainer_name": "Vivek Nair",
+    "goal": "Flexibility",
+    "duration_weeks": 8,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Hamstring Stretch",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Hip Opener Flow",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Plank",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Cat-Cow Stretch",
+        "sets": 3,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6f8"
+    },
+    "plan_id": "WP5074",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ac"
+    },
+    "member_name": "Pooja Varma",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff66e"
+    },
+    "trainer_name": "Sanjay Pillai",
+    "goal": "Muscle Gain",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Mon",
+        "exercise_name": "Deadlift",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 70,
+        "notes": ""
+      },
+      {
+        "day": "Tue",
+        "exercise_name": "Squat",
+        "sets": 4,
+        "reps": 15,
+        "weight_kg": 60,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Overhead Press",
+        "sets": 3,
+        "reps": 15,
+        "weight_kg": 35,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Barbell Row",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 40,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6f9"
+    },
+    "plan_id": "WP5075",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ad"
+    },
+    "member_name": "Gautham Subramanian",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff672"
+    },
+    "trainer_name": "Vivek Nair",
+    "goal": "Flexibility",
+    "duration_weeks": 12,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Tue",
+        "exercise_name": "Plank",
+        "sets": 4,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Wed",
+        "exercise_name": "Sun Salutation",
+        "sets": 5,
+        "reps": 15,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Hip Opener Flow",
+        "sets": 5,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Hamstring Stretch",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-06-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6fa"
+    },
+    "plan_id": "WP5076",
+    "member_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff6ae"
+    },
+    "member_name": "Pooja Pillai",
+    "trainer_id": {
+      "$oid": "6ab4ff3135de0fa8fcdff670"
+    },
+    "trainer_name": "Farhan Ali",
+    "goal": "Weight Loss",
+    "duration_weeks": 8,
+    "status": "active",
+    "exercises": [
+      {
+        "day": "Wed",
+        "exercise_name": "Treadmill Intervals",
+        "sets": 4,
+        "reps": 12,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Thu",
+        "exercise_name": "Mountain Climbers",
+        "sets": 3,
+        "reps": 10,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Fri",
+        "exercise_name": "Jump Squats",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 0,
+        "notes": ""
+      },
+      {
+        "day": "Sat",
+        "exercise_name": "Kettlebell Swing",
+        "sets": 3,
+        "reps": 8,
+        "weight_kg": 17,
+        "notes": ""
+      }
+    ],
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  }
+]

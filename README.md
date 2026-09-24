@@ -1,82 +1,120 @@
 # Gym Membership Management System (MongoDB)
 
-Database Systems Project, Review 2: Database Implementation and Core Functionalities
-Liz Alex (24BCE2978), Malika Balaji (24BAI0114), Nehaa Prabhu (24BAI0130). Submitted to Prof. Lydia Jane G.
+Database Systems Project, VIT Vellore
+**Team:** Liz Alex (24BCE2978), Malika Balaji (24BAI0114), Nehaa Prabhu (24BAI0130)
+**Faculty:** Prof. Lydia Jane G
 
-## 1. What is in this repository
+A MongoDB-based system to manage gym members, trainers, workout plans, classes, attendance and payments,
+with analytical reports built on the aggregation framework.
 
-| Path | Purpose | Rubric item |
+## Project reviews
+
+| Review | Scope | Documents |
 |---|---|---|
-| `gym_db/schema.py` | Creates the 7 collections with `$jsonSchema` validators | Implementation |
-| `gym_db/seed.py` | Loads 1,016 reproducible sample documents | Implementation |
-| `gym_db/indexes.py` | 19 indexes (unique, compound, multikey, text, partial) and `explain()` comparison | Advanced |
-| `gym_db/crud.py` | Create, read, update, delete for every collection, with referential-integrity rules | CRUD |
-| `gym_db/aggregations.py` | 8 aggregation pipelines, 2 `$graphLookup` traversals, 1 view | Advanced |
-| `gym_db/transactions.py` | 2 multi-document ACID transactions with rollback | Advanced |
-| `demo.py` | Runs the full intermediate demonstration in rubric order | Demo |
-| `mongosh/demo_queries.js` | Same highlights as raw shell queries for the live viva | Demo |
-| `data/*.json` | Exported dataset (Extended JSON) for `mongoimport` | Sample data |
-| `tests/test_gym_db.py` | 6 automated tests (offline) | Quality |
+| Review 1 | Problem statement, requirements, NoSQL selection, data model | [Review 1 Report (PDF)](docs/Review1/Review1_Report.pdf) |
+| Review 2 | Database implementation, CRUD, advanced NoSQL features | [Review 2 Report (PDF)](docs/Review2/Review2_Report.pdf), [Word version](docs/Review2/Review2_Report.docx) |
 
-## 2. Setup
+## Review 2 at a glance
 
+| Rubric item | Delivered |
+|---|---|
+| Database implementation (2) | 7 collections with `$jsonSchema` validators, 10 relationships, 1,016 sample documents |
+| CRUD operations (3) | 36 functions across all collections, 10 referential-integrity rules |
+| Advanced NoSQL features (5) | 8 aggregation pipelines and a view, `$graphLookup` referral network, 19 indexes with `explain()` proof, 2 ACID transactions with rollback |
+
+Verified on a live MongoDB 8.3 replica set. Full output: [`demo_output.txt`](demo_output.txt).
+
+## Repository structure
+
+| Path | Purpose |
+|---|---|
+| `gym_db/schema.py` | Creates the 7 collections with `$jsonSchema` validators |
+| `gym_db/seed.py` | Loads 1,016 reproducible sample documents |
+| `gym_db/indexes.py` | 19 indexes (unique, compound, multikey, text, partial) and the `explain()` comparison |
+| `gym_db/crud.py` | Create, read, update, delete for every collection, with integrity rules |
+| `gym_db/aggregations.py` | 8 aggregation pipelines, 2 `$graphLookup` traversals, 1 view |
+| `gym_db/transactions.py` | 2 multi-document ACID transactions |
+| `demo.py` | Runs the full demonstration in rubric order |
+| `mongosh/demo_queries.js` | The same highlights as raw shell queries |
+| `data/*.json` | Exported sample data (Extended JSON, for `mongoimport`) |
+| `tests/test_gym_db.py` | 6 automated tests |
+| `docs/` | Review 1 and Review 2 reports, rubric and screenshots |
+
+## How to run
+
+### 1. Start MongoDB as a replica set (needed for transactions)
+
+**macOS (Homebrew)**
 ```bash
-pip install -r requirements.txt
+brew tap mongodb/brew && brew trust mongodb/brew && brew install mongodb-community
+# add to /opt/homebrew/etc/mongod.conf:
+#   replication:
+#     replSetName: rs0
+brew services restart mongodb-community
+mongosh --eval "rs.initiate()"
 ```
 
-Transactions need a replica set. Any ONE of these works:
-
+**Docker (any OS)**
 ```bash
-# A. Docker (simplest)
 docker run -d --name gymdb -p 27017:27017 mongo:8 --replSet rs0
 docker exec gymdb mongosh --eval "rs.initiate()"
-
-# B. Local mongod
-mongod --dbpath ./db --replSet rs0          # new terminal
-mongosh --eval "rs.initiate()"
-
-# C. MongoDB Atlas free cluster (already a replica set)
-export MONGO_URI="mongodb+srv://<user>:<pass>@<cluster>.mongodb.net/"
 ```
 
-A plain standalone `mongod` also works; the demo simply skips the transaction section.
-
-## 3. Run
-
+### 2. Install and run
 ```bash
-python demo.py                  # full demo on the live database (recreates gym_db)
-python demo.py --section agg    # setup + one section: crud | agg | graph | index | txn
-python demo.py --mock           # no server needed (in-memory mongomock)
-python -m pytest -q             # automated tests
+python3 -m venv .venv
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+
+python demo.py                     # full demonstration (recreates gym_db)
+python demo.py --section index     # setup + one section: crud | agg | graph | index | txn
+python demo.py --mock              # runs without a server (in-memory)
+python -m pytest -q                # automated tests
 mongosh "mongodb://localhost:27017/?directConnection=true" mongosh/demo_queries.js
 ```
 
-`demo.py` drops and recreates `gym_db` every run, so the demonstration always starts from the same state.
-All dates are relative to a fixed reference date of 24 Sep 2026 (`gym_db/config.py`) so reports are reproducible.
+All reports use a fixed reference date of 24 September 2026 (`gym_db/config.py`) so results are reproducible.
+Test logins: `priya.menon@gym.com` / `Trainer@01`; members use `Member@<number>`, e.g. `Member@1001`.
 
-## 4. Sample data
+## Sample data
 
-| Collection | Documents | Notes |
-|---|---:|---|
-| trainers | 8 | specialization and availability embedded |
-| members | 60 | 24 Basic, 22 Premium, 14 VIP; 50 active, 6 expired, 4 frozen; referral links |
-| workout_plans | 76 | 60 active plus 16 completed; 3 to 4 embedded exercises each |
-| classes | 8 | weekly schedule and bounded roster embedded |
-| class_sessions | 64 | 4 weeks, 7 Sep to 4 Oct 2026 |
-| attendance | 580 | present, late, absent per completed session |
-| payments | 220 | Jul to Oct 2026; paid, pending and overdue |
-| **Total** | **1,016** | |
+| Collection | Documents |
+|---|---:|
+| trainers | 8 |
+| members | 60 |
+| workout_plans | 76 |
+| classes | 8 |
+| class_sessions | 64 |
+| attendance | 580 |
+| payments | 220 |
+| **Total** | **1,016** |
 
-Login for testing: trainers `priya.menon@gym.com` / `Trainer@01` (pattern `Trainer@NN`), members use `Member@<member number>`, e.g. `Member@1001`.
+## Screenshots (live MongoDB run)
 
-## 5. Change from Review 1
+**Validator rejecting invalid data**
+![Validator](docs/Review2/screenshots/01_validator_rejection.png)
 
-One field was added to `members`: `referred_by` (ObjectId of the referring member, or null). It models the gym's referral
-programme as a self-referencing graph, so the `$graphLookup` traversal has a real business use.
+**Sample data loaded**
+![Sample data](docs/Review2/screenshots/02_sample_data_loaded.png)
 
-## 6. Pushing to GitHub
+**CRUD operations**
+![CRUD create and read](docs/Review2/screenshots/03_crud_create_read.png)
+![CRUD update and delete](docs/Review2/screenshots/04_crud_update_delete.png)
 
-```bash
-git remote add origin https://github.com/<team-account>/gym-membership-db.git
-git push -u origin main
-```
+**Aggregation pipelines**
+![Aggregations A1 to A5](docs/Review2/screenshots/05_aggregations_A1_A5.png)
+![Aggregations A6 to A8](docs/Review2/screenshots/06_aggregations_A6_A8_view.png)
+
+**Graph traversal ($graphLookup)**
+![Graph traversal](docs/Review2/screenshots/07_graph_traversal.png)
+
+**Indexing and explain()**
+![Indexing](docs/Review2/screenshots/08_indexing_explain.png)
+
+**ACID transactions**
+![Transactions](docs/Review2/screenshots/09_transactions.png)
+
+## Change from Review 1
+
+One field was added to `members`: `referred_by` (the referring member's ObjectId, or null). It models the gym's referral
+programme as a self-referencing graph, used by the `$graphLookup` traversal.

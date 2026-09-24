@@ -1,0 +1,299 @@
+Connected to MongoDB; database 'gym_db'; reference date 2026-09-24
+
+==============================================================================
+1. DATABASE IMPLEMENTATION: collections, validators, sample data, indexes
+==============================================================================
+Collections created with $jsonSchema validators:
+  members, trainers, workout_plans, classes, class_sessions, attendance, payments
+
+--- Sample data loaded (document counts)
+collection      documents
+--------------  ---------
+trainers        8        
+members         60       
+workout_plans   76       
+classes         8        
+class_sessions  64       
+attendance      580      
+payments        220      
+TOTAL           1016     
+
+--- 19 indexes created
+  members.uq_email, members.uq_member_id, members.ix_trainer, members.ix_tier_status, members.ix_referred_by, trainers.uq_email, trainers.uq_trainer_id, workout_plans.ix_member_status, workout_plans.ix_trainer, classes.ix_trainer, classes.ix_enrolled_member, classes.tx_class_search, class_sessions.ix_class_date, attendance.ix_member_date, attendance.uq_session_member, attendance.ix_class_status, payments.ix_member_status, payments.ix_due_date, payments.px_unpaid_dues
+
+--- Relationship check: one member resolved across all referenced collections
+MEM1001 Harish Kumar (VIP) -> trainer TRN01 Priya Menon
+  workout plans: 1 | classes: 1 | attendance rows: 5 | payments: 4
+
+--- Validator in action: inserting a member with an invalid tier
+REJECTED by validator: 121 Document failed validation
+
+==============================================================================
+2. CRUD OPERATIONS
+==============================================================================
+
+--- CREATE: new trainer, new member (referred by MEM1003), workout plan, class, session, invoice
+trainer TRN09 | member MEM1061 | plan WP5077 | class CLS09 | session SES9065 | invoice PAY7221
+
+--- CREATE rejected: duplicate email (unique index uq_email)
+DuplicateKeyError: email already registered
+
+--- CREATE rejected: member assigned to a trainer that does not exist (app-level integrity)
+IntegrityError: Trainer TRN77 not found
+
+--- READ: member profile MEM1061 (password_hash excluded by projection)
+{'_id': ObjectId('6ab528f8f4007d60a98103e0'),
+ 'member_id': 'MEM1061',
+ 'name': 'Rhea Thomas',
+ 'email': 'rhea.thomas@example.com',
+ 'phone': '9876501234',
+ 'dob': datetime.datetime(2004, 3, 15, 0, 0),
+ 'gender': 'Female',
+ 'role': 'member',
+ 'membership': {'type': 'Premium',
+                'status': 'active',
+                'start_date': datetime.datetime(2026, 9, 1, 0, 0),
+                'end_date': datetime.datetime(2027, 9, 1, 0, 0)},
+ 'assigned_trainer_id': ObjectId('6ab528f7f4007d60a98103df'),
+ 'referred_by': ObjectId('6ab528f4f4007d60a980fff0'),
+ 'address': {'line1': '', 'city': 'Vellore', 'pincode': '632014'},
+ 'emergency_contact': {'name': '', 'phone': ''},
+ 'created_at': datetime.datetime(2026, 9, 24, 0, 0)}
+
+--- READ: VIP members, page 1 (filter + sort + skip/limit pagination)
+11 active VIP members; first 5:
+member_id  name              city     
+---------  ----------------  ---------
+MEM1001    Harish Kumar      Bengaluru
+MEM1012    Isha Das          Vellore  
+MEM1014    Divya Das         Chennai  
+MEM1018    Aishwarya Das     Hosur    
+MEM1028    Lakshmi Krishnan  Bengaluru
+
+--- READ: trainers who teach Yoga (query inside embedded array)
+trainer_id  name          
+----------  --------------
+TRN03       Deepa Krishnan
+TRN07       Kavitha Reddy 
+
+--- READ: MEM1001 last 5 attendance records (uses index ix_member_date)
+date                 status   check_in_time
+-------------------  -------  -------------
+2026-09-23 00:00:00  present  18:52        
+2026-09-19 00:00:00  present  16:51        
+2026-09-16 00:00:00  present  18:50        
+2026-09-12 00:00:00  present  16:57        
+2026-09-09 00:00:00  present  19:00        
+
+--- UPDATE: enroll into a class of capacity 2 (atomic capacity guard)
+3rd enrollment blocked -> Cannot enroll MEM1001 in CLS09: class full or already enrolled
+roster: ['Rhea Thomas', 'Swathi Sharma']
+
+--- UPDATE: embedded arrays ($push, positional $inc, $addToSet, $pull)
+day  exercise_name  sets  reps  weight_kg
+---  -------------  ----  ----  ---------
+Mon  Squat          4     10    35       
+Wed  Bench Press    4     10    25       
+Fri  Deadlift       3     8     40       
+specialization: ['Kickboxing', 'HIIT', 'Boxing']
+
+--- UPDATE: tier upgrade Premium -> VIP, and name change propagated to denormalized copies
+members: Rhea T. Thomas | tier: VIP
+workout_plans.member_name: Rhea T. Thomas
+payments.member_name: Rhea T. Thomas
+classes.enrolled_members.member_name: ['Rhea T. Thomas']
+
+--- UPDATE: attendance upsert (mark late, then correct to present; still one row)
+rows for (SES9065, MEM1061): 1 | status: present
+
+--- UPDATE: payments (record payment, overdue sweep)
+record_payment: {'payment_id': 'PAY7221', 'amount': 2500, 'payment_mode': 'UPI', 'status': 'paid'}
+bills newly flagged overdue by sweep: 16
+
+--- DELETE: remove exercise, withdraw from class, delete attendance, delete member with cascade
+exercises now: ['Squat', 'Bench Press']
+withdraw: 1 | delete attendance: 1
+delete MEM1016 blocked -> MEM1016 has 2 unpaid bill(s); settle before deleting
+delete MEM1061 -> {'plans_deleted': 1, 'classes_updated': 0}
+member still exists? False | orphan plans left: 0
+delete TRN01 blocked -> TRN01 still has 6 members and 0 classes; reassign first
+
+--- AUTH (FR8): bcrypt login check
+correct password: {'role': 'trainer', 'id': 'TRN01', 'name': 'Priya Menon'}
+wrong password:   None
+
+==============================================================================
+3a. AGGREGATION PIPELINES (FR7)
+==============================================================================
+
+--- A1 Monthly revenue trend by tier (paid only)
+2026-07  INR  147,000  (60 payments)  [Basic 36,000, Premium 55,000, VIP 56,000]
+2026-08  INR  145,500  (59 payments)  [Basic 34,500, Premium 55,000, VIP 56,000]
+2026-09  INR   79,500  (34 payments)  [Basic 24,000, Premium 27,500, VIP 28,000]
+
+--- A2 Class popularity
+class_name     trainer         enrolled  capacity  fill_rate_pct  sessions_held  avg_turnout  attendance_rate_pct
+-------------  --------------  --------  --------  -------------  -------------  -----------  -------------------
+Power Zumba    Meenakshi Iyer  19        25        76.0           5              15.4         81.1               
+HIIT Express   Rohit Sharma    17        18        94.4           4              13.5         79.4               
+Evening Yoga   Kavitha Reddy   19        20        95.0           5              12.8         67.4               
+CrossFit Burn  Vivek Nair      15        15        100.0          5              12.2         81.3               
+Strength 101   Sanjay Pillai   14        14        100.0          5              10.6         75.7               
+Pilates Core   Deepa Krishnan  12        12        100.0          5              10.2         85.0               
+Spin Cycle     Farhan Ali      13        16        81.2           4              10.0         76.9               
+Morning Yoga   Deepa Krishnan  13        20        65.0           5              9.4          72.3               
+
+--- A3 Members at risk (attendance < 60%)
+member_id  name              tier     sessions_marked  attended  rate_pct
+---------  ----------------  -------  ---------------  --------  --------
+MEM1052    Isha Nair         Premium  5                1         20.0    
+MEM1020    Keerthana Iyer    Premium  10               4         40.0    
+MEM1030    Meera Varma       Basic    24               11        45.8    
+MEM1008    Isha Joshi        Basic    10               5         50.0    
+MEM1053    Karthik Krishnan  Basic    8                4         50.0    
+MEM1039    Gautham Joshi     Premium  14               7         50.0    
+MEM1019    Siddharth Varma   Basic    24               12        50.0    
+
+--- A4 Outstanding dues (collections worklist)
+member_id  name                tier     bills  amount_due  max_days_overdue  priority
+---------  ------------------  -------  -----  ----------  ----------------  --------
+MEM1016    Divya Menon         Basic    2      3000        50.0              HIGH    
+MEM1014    Divya Das           VIP      2      8000        19.0              HIGH    
+MEM1046    Nandini Menon       VIP      2      8000        19.0              HIGH    
+MEM1038    Nandini Das         VIP      2      8000        19.0              HIGH    
+MEM1018    Aishwarya Das       VIP      2      8000        19.0              HIGH    
+MEM1009    Gautham Bhat        Premium  2      5000        19.0              HIGH    
+MEM1024    Ananya Das          Premium  2      5000        19.0              HIGH    
+MEM1052    Isha Nair           Premium  2      5000        19.0              HIGH    
+MEM1054    Keerthana Krishnan  Premium  2      5000        19.0              HIGH    
+MEM1049    Ashwin Krishnan     Premium  2      5000        19.0              HIGH    
+MEM1021    Karthik Sharma      Premium  2      5000        19.0              HIGH    
+MEM1051    Karthik Shetty      Premium  2      5000        19.0              HIGH    
+
+--- A5 Trainer workload (3 x $lookup)
+trainer_id  name            members  active_plans  classes
+----------  --------------  -------  ------------  -------
+TRN03       Deepa Krishnan  12       12            2      
+TRN04       Sanjay Pillai   10       10            1      
+TRN06       Farhan Ali      10       10            1      
+TRN08       Vivek Nair      8        8             1      
+TRN07       Kavitha Reddy   7        7             1      
+TRN01       Priya Menon     6        6             0      
+TRN02       Rohit Sharma    5        5             1      
+TRN05       Meenakshi Iyer  2        2             1      
+TRN09       Nisha Varghese  0        0             1      
+
+--- A6 Membership overview ($facet + $bucket in one query)
+{'by_tier': [{'_id': 'Basic', 'count': 24},
+             {'_id': 'Premium', 'count': 22},
+             {'_id': 'VIP', 'count': 14}],
+ 'by_status': [{'_id': 'active', 'count': 50},
+               {'_id': 'expired', 'count': 6},
+               {'_id': 'frozen', 'count': 4}],
+ 'age_groups': [{'_id': 18, 'count': 12},
+                {'_id': 25, 'count': 15},
+                {'_id': 35, 'count': 22},
+                {'_id': 45, 'count': 11}],
+ 'by_city': [{'_id': 'Chennai', 'count': 16},
+             {'_id': 'Bengaluru', 'count': 13},
+             {'_id': 'Hosur', 'count': 12},
+             {'_id': 'Katpadi', 'count': 10},
+             {'_id': 'Vellore', 'count': 9}]}
+
+--- A7 Most prescribed exercises ($unwind embedded array)
+exercise             plans  avg_sets  avg_weight_kg
+-------------------  -----  --------  -------------
+Plank                23     4.0       0.0          
+Rowing Machine       20     3.7       0.0          
+Squat                19     4.2       67.6         
+Bench Press          17     4.0       55.9         
+Deadlift             17     3.9       74.4         
+Pull Ups             11     4.0       0.0          
+Treadmill Intervals  11     4.0       0.0          
+Barbell Row          10     3.6       39.5         
+
+--- A8 Peak check-in hours
+hour   check_ins
+-----  ---------
+18:00  115      
+06:00  98       
+17:00  82       
+16:00  51       
+09:00  39       
+07:00  24       
+
+--- V1 member_dashboard view
+{'member_id': 'MEM1005',
+ 'name': 'Rahul Rao',
+ 'tier': 'Premium',
+ 'status': 'expired',
+ 'trainer': 'Vivek Nair',
+ 'unpaid_amount': 0}
+
+==============================================================================
+3b. GRAPH TRAVERSAL: referral network with $graphLookup
+==============================================================================
+
+--- G2 Top referrers (size of downstream network)
+member_id  name            direct  network_size  levels
+---------  --------------  ------  ------------  ------
+MEM1036    Lakshmi Bhat    1       5             3     
+MEM1016    Divya Menon     2       4             2     
+MEM1030    Meera Varma     1       4             3     
+MEM1020    Keerthana Iyer  1       3             3     
+MEM1051    Karthik Shetty  2       3             2     
+
+--- G1 Full referral tree of MEM1036
+  L1 MEM1041 Arjun Rao
+    L2 MEM1046 Nandini Menon
+    L2 MEM1047 Varun Das
+      L3 MEM1049 Ashwin Krishnan
+      L3 MEM1050 Aishwarya Menon
+
+==============================================================================
+3c. INDEXING
+==============================================================================
+
+--- Indexes on attendance and payments
+  attendance._id_: [('_id', 1)]
+  attendance.ix_member_date: [('member_id', 1), ('date', -1)]
+  attendance.uq_session_member: [('session_id', 1), ('member_id', 1)] (unique)
+  attendance.ix_class_status: [('class_id', 1), ('status', 1)]
+  payments._id_: [('_id', 1)]
+  payments.ix_member_status: [('member_id', 1), ('status', 1)]
+  payments.ix_due_date: [('due_date', 1)]
+  payments.px_unpaid_dues: [('status', 1), ('due_date', 1)] (partial)
+
+--- explain(): member attendance history, collection scan vs index scan
+plan           stage     docs_examined  keys_examined  returned  time_ms
+-------------  --------  -------------  -------------  --------  -------
+without_index  COLLSCAN  580            0              5         0      
+with_index     IXSCAN    5              5              5         0      
+
+--- Text index search: classes matching 'yoga'
+class_name    category
+------------  --------
+Evening Yoga  Yoga    
+Morning Yoga  Yoga    
+
+==============================================================================
+3d. MULTI-DOCUMENT ACID TRANSACTIONS
+==============================================================================
+
+--- T1 renew_membership with a simulated failure -> rollback
+aborted: Simulated failure after payment insert
+payments count 221 -> 221 (unchanged) | end_date still 2027-03-31
+
+--- T1 renew_membership, 3 months -> commit
+{'payment_id': 'PAY7222', 'amount': 4500, 'new_end_date': '2027-06-30'}
+end_date 2027-03-31 -> 2027-06-30 | payments 221 -> 222
+
+--- T2 close_session: attendance rows + session status in one transaction
+SES9006 Morning Yoga 2026-09-24: {'session_id': 'SES9006', 'attendance_rows': 3}
+session status now: completed
+
+--- T2 with a member not on the roster -> whole transaction rolled back
+aborted: MEM1001 is not enrolled in Pilates Core
+attendance rows 583 -> 583 | SES9046 status: scheduled
+
+Demo complete.

@@ -4,7 +4,10 @@ from fastapi.testclient import TestClient
 
 from api.database import ensure_admin, get_db
 from api.main import app
+from api.serializers import serialize_doc
 from gym_db import config as gym_config
+from gym_db import aggregations as gym_agg
+from gym_db import crud as gym_crud
 from gym_db import seed as gym_seed
 from gym_db.indexes import create_indexes
 from gym_db.schema import create_collections
@@ -92,6 +95,37 @@ def test_member_dashboard_success_and_data_integrity(client):
     assert isinstance(data["unpaid_dues"], list)
 
 
+def test_member_dashboard_integrates_existing_database_queries(client, mock_db):
+    """API payload is composed from the established dashboard, CRUD, and aggregation functions."""
+    member_id = "MEM1001"
+    login = client.post("/api/auth/login", json={"username": member_id, "password": "Member@1001"})
+    token = login.json()["access_token"]
+
+    response = client.get(
+        "/api/members/me/dashboard",
+        headers={"Authorization": f"Bearer {token}"},
+    )
+    assert response.status_code == 200
+
+    expected_dues = gym_crud.member_dues(mock_db, member_id)
+    expected_summary = gym_agg.member_dashboard(mock_db, member_id)
+    expected_summary["unpaid_amount"] = sum(dues.get("amount", 0) for dues in expected_dues)
+    expected = serialize_doc({
+        "member_id": member_id,
+        "summary": expected_summary,
+        "profile": gym_crud.get_member(mock_db, member_id),
+        "active_plan": gym_crud.get_active_plan(mock_db, member_id),
+        "enrolled_classes": gym_crud.member_classes(mock_db, member_id),
+        "recent_attendance": gym_crud.attendance_history(mock_db, member_id, limit=5),
+        "unpaid_dues": expected_dues,
+    })
+    assert response.json() == expected
+    assert response.json()["summary"]["unpaid_amount"] == sum(
+        invoice["amount"] for invoice in response.json()["unpaid_dues"]
+    )
+    assert response.json()["summary"]["unpaid_amount"] == 4000
+
+
 def test_member_dashboard_strict_ownership(client):
     """Verifies that each member only gets their own data, preventing ID spoofing."""
     # Member 1001
@@ -107,3 +141,11 @@ def test_member_dashboard_strict_ownership(client):
     assert m1_data["member_id"] == "MEM1001"
     assert m2_data["member_id"] == "MEM1002"
     assert m1_data["profile"]["name"] != m2_data["profile"]["name"]
+
+    # Client-supplied IDs cannot override the identity from the JWT.
+    spoofed = client.get(
+        "/api/members/me/dashboard?member_id=MEM1002",
+        headers={"Authorization": f"Bearer {m1_token}"},
+    )
+    assert spoofed.status_code == 200
+    assert spoofed.json()["member_id"] == "MEM1001"

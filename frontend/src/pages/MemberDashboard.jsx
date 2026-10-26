@@ -1,31 +1,37 @@
 import React, { useEffect, useState } from 'react';
 import { membersApi } from '../api/client';
-import { useAuth } from '../context/AuthContext';
 import {
   User, Award, AlertCircle, Dumbbell, Calendar, Clock,
-  CreditCard, CheckCircle2, XCircle, ArrowUpRight, Activity, MapPin, Phone
+  CreditCard, CheckCircle2, Activity, MapPin
 } from 'lucide-react';
 
 export function MemberDashboard() {
-  const { user } = useAuth();
   const [dashboard, setDashboard] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [retryCount, setRetryCount] = useState(0);
 
   useEffect(() => {
+    let isCurrent = true;
+
     async function loadDashboard() {
+      setLoading(true);
+      setError('');
       try {
-        setLoading(true);
         const data = await membersApi.getMyDashboard();
-        setDashboard(data);
+        if (isCurrent) setDashboard(data);
       } catch (err) {
-        setError(err.message || 'Failed to fetch member dashboard data');
+        if (isCurrent) setError(err.message || 'Failed to fetch member dashboard data');
       } finally {
-        setLoading(false);
+        if (isCurrent) setLoading(false);
       }
     }
     loadDashboard();
-  }, []);
+
+    return () => {
+      isCurrent = false;
+    };
+  }, [retryCount]);
 
   if (loading) {
     return (
@@ -53,6 +59,20 @@ export function MemberDashboard() {
           <div>
             <div style={{ fontWeight: 700 }}>Unable to load dashboard</div>
             <div style={{ fontSize: '0.88rem', opacity: 0.9 }}>{error}</div>
+            <button
+              type="button"
+              onClick={() => setRetryCount((count) => count + 1)}
+              style={{
+                marginTop: '12px',
+                padding: '8px 12px',
+                border: '1px solid rgba(239, 68, 68, 0.4)',
+                borderRadius: '8px',
+                color: '#fff',
+                fontWeight: 600
+              }}
+            >
+              Try again
+            </button>
           </div>
         </div>
       </div>
@@ -60,8 +80,8 @@ export function MemberDashboard() {
   }
 
   const { profile, summary, active_plan, enrolled_classes, recent_attendance, unpaid_dues } = dashboard;
-  const tier = profile?.membership?.type || 'Basic';
-  const status = profile?.membership?.status || 'active';
+  const tier = profile?.membership?.type || 'Unknown';
+  const status = profile?.membership?.status || 'unknown';
 
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '32px 24px' }}>
@@ -75,7 +95,7 @@ export function MemberDashboard() {
         marginBottom: '28px'
       }}>
         <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '6px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '10px', marginBottom: '6px' }}>
             <h1 style={{ fontSize: '1.85rem', fontWeight: 800, color: '#fff', letterSpacing: '-0.02em' }}>
               Welcome back, {profile.name}
             </h1>
@@ -92,7 +112,7 @@ export function MemberDashboard() {
             <span>ID: <strong style={{ color: '#fff' }}>{profile.member_id}</strong></span>
             <span>•</span>
             <MapPin size={14} style={{ display: 'inline', verticalAlign: '-2px' }} />
-            <span>{profile.address?.city || 'Vellore'}</span>
+            <span>{profile.address?.city || 'Address not provided'}</span>
           </p>
         </div>
 
@@ -151,7 +171,7 @@ export function MemberDashboard() {
             <Dumbbell size={18} color="#8b5cf6" />
           </div>
           <div style={{ fontSize: '1.3rem', fontWeight: 800, color: '#fff' }}>
-            {active_plan?.goal || 'General Fitness'}
+            {active_plan?.goal || 'No active goal'}
           </div>
           <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: '4px' }}>
             {active_plan ? `${active_plan.duration_weeks}-week prescription` : 'No active plan'}
@@ -175,7 +195,7 @@ export function MemberDashboard() {
       {/* Main Grid: Workout Plan & Classes */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 500px), 1fr))',
         gap: '24px',
         marginBottom: '28px'
       }}>
@@ -279,7 +299,7 @@ export function MemberDashboard() {
       {/* Secondary Grid: Attendance & Invoices */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))',
         gap: '24px'
       }}>
         {/* Attendance History */}

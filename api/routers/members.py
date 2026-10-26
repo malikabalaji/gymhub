@@ -16,7 +16,7 @@ def get_authenticated_member_dashboard(
     db=Depends(get_db),
 ):
     """Retrieve full dashboard data for the authenticated member.
-    
+
     SECURITY & OWNERSHIP:
     The member ID is strictly derived from the validated JWT token (current_user['id']).
     Client-supplied IDs are not accepted or permitted here.
@@ -60,6 +60,9 @@ def get_authenticated_member_dashboard(
 
     # 6. Unpaid dues / pending invoices
     unpaid_dues = gym_crud.member_dues(db, member_id)
+    # Derive the headline total from the same invoice rows returned to the UI.
+    # This also avoids mongomock's incomplete $sum-over-array-expression behavior.
+    summary["unpaid_amount"] = sum(dues.get("amount", 0) for dues in unpaid_dues)
 
     return serialize_doc({
         "member_id": member_id,

@@ -1,0 +1,12 @@
+MongoDB 8.3.7: building gym_bench with 200,000 attendance and 60,000 payment documents ...
+
+query                         plan                      docs_examined  keys_examined  returned  median_ms
+B1 member attendance history  COLLSCAN                        200,000              0       105      80.46
+B1 member attendance history  ix_member_date                      105            105       105        2.1
+B2 absentees of one class     COLLSCAN                        200,000              0       998      84.97
+B2 absentees of one class     ix_class_status                     998            998       998       5.53
+B3 overdue dues report        COLLSCAN                         60,000              0     2,965      39.95
+B3 overdue dues report        px_unpaid_dues (partial)          2,965          2,966     2,965      13.38
+B3 overdue dues report        full index                        2,965          2,967     2,965      12.78
+
+Index size: px_unpaid_dues 60.0 KB vs full index 604.0 KB

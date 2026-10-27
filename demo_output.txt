@@ -42,7 +42,7 @@ DuplicateKeyError: email already registered
 IntegrityError: Trainer TRN77 not found
 
 --- READ: member profile MEM1061 (password_hash excluded by projection)
-{'_id': ObjectId('6ab528f8f4007d60a98103e0'),
+{'_id': ObjectId('6ae074ec0290518fb53f32f2'),
  'member_id': 'MEM1061',
  'name': 'Rhea Thomas',
  'email': 'rhea.thomas@example.com',
@@ -54,8 +54,8 @@ IntegrityError: Trainer TRN77 not found
                 'status': 'active',
                 'start_date': datetime.datetime(2026, 9, 1, 0, 0),
                 'end_date': datetime.datetime(2027, 9, 1, 0, 0)},
- 'assigned_trainer_id': ObjectId('6ab528f7f4007d60a98103df'),
- 'referred_by': ObjectId('6ab528f4f4007d60a980fff0'),
+ 'assigned_trainer_id': ObjectId('6ae074ec0290518fb53f32f1'),
+ 'referred_by': ObjectId('6ae074e90290518fb53f2f02'),
  'address': {'line1': '', 'city': 'Vellore', 'pincode': '632014'},
  'emergency_contact': {'name': '', 'phone': ''},
  'created_at': datetime.datetime(2026, 9, 24, 0, 0)}
@@ -150,25 +150,25 @@ MEM1052    Isha Nair         Premium  5                1         20.0
 MEM1020    Keerthana Iyer    Premium  10               4         40.0    
 MEM1030    Meera Varma       Basic    24               11        45.8    
 MEM1008    Isha Joshi        Basic    10               5         50.0    
-MEM1053    Karthik Krishnan  Basic    8                4         50.0    
-MEM1039    Gautham Joshi     Premium  14               7         50.0    
 MEM1019    Siddharth Varma   Basic    24               12        50.0    
+MEM1039    Gautham Joshi     Premium  14               7         50.0    
+MEM1053    Karthik Krishnan  Basic    8                4         50.0    
 
 --- A4 Outstanding dues (collections worklist)
-member_id  name                tier     bills  amount_due  max_days_overdue  priority
----------  ------------------  -------  -----  ----------  ----------------  --------
-MEM1016    Divya Menon         Basic    2      3000        50.0              HIGH    
-MEM1014    Divya Das           VIP      2      8000        19.0              HIGH    
-MEM1046    Nandini Menon       VIP      2      8000        19.0              HIGH    
-MEM1038    Nandini Das         VIP      2      8000        19.0              HIGH    
-MEM1018    Aishwarya Das       VIP      2      8000        19.0              HIGH    
-MEM1009    Gautham Bhat        Premium  2      5000        19.0              HIGH    
-MEM1024    Ananya Das          Premium  2      5000        19.0              HIGH    
-MEM1052    Isha Nair           Premium  2      5000        19.0              HIGH    
-MEM1054    Keerthana Krishnan  Premium  2      5000        19.0              HIGH    
-MEM1049    Ashwin Krishnan     Premium  2      5000        19.0              HIGH    
-MEM1021    Karthik Sharma      Premium  2      5000        19.0              HIGH    
-MEM1051    Karthik Shetty      Premium  2      5000        19.0              HIGH    
+member_id  name             tier     bills  amount_due  max_days_overdue  priority
+---------  ---------------  -------  -----  ----------  ----------------  --------
+MEM1016    Divya Menon      Basic    2      3000        50.0              HIGH    
+MEM1014    Divya Das        VIP      2      8000        19.0              HIGH    
+MEM1018    Aishwarya Das    VIP      2      8000        19.0              HIGH    
+MEM1038    Nandini Das      VIP      2      8000        19.0              HIGH    
+MEM1046    Nandini Menon    VIP      2      8000        19.0              HIGH    
+MEM1009    Gautham Bhat     Premium  2      5000        19.0              HIGH    
+MEM1021    Karthik Sharma   Premium  2      5000        19.0              HIGH    
+MEM1024    Ananya Das       Premium  2      5000        19.0              HIGH    
+MEM1044    Kavya Kumar      Premium  2      5000        19.0              HIGH    
+MEM1049    Ashwin Krishnan  Premium  2      5000        19.0              HIGH    
+MEM1051    Karthik Shetty   Premium  2      5000        19.0              HIGH    
+MEM1052    Isha Nair        Premium  2      5000        19.0              HIGH    
 
 --- A5 Trainer workload (3 x $lookup)
 trainer_id  name            members  active_plans  classes
@@ -295,5 +295,20 @@ session status now: completed
 --- T2 with a member not on the roster -> whole transaction rolled back
 aborted: MEM1001 is not enrolled in Pilates Core
 attendance rows 583 -> 583 | SES9046 status: scheduled
+
+==============================================================================
+3e. TRIGGERS: change streams on members and payments
+==============================================================================
+
+--- TR2: MEM1004 was expired; after paying PAY7223 the trigger set status to active
+
+--- TR1: audit_log written by the trigger
+collection  operation           key      changed_fields                    
+----------  ------------------  -------  ----------------------------------
+payments    insert              PAY7223                                    
+payments    update              PAY7223  payment_date, payment_mode, status
+members     trigger:reactivate  MEM1004  membership.status                 
+members     update              MEM1002  phone                             
+members     update              MEM1004  membership.status                 
 
 Demo complete.

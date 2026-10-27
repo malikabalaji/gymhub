@@ -187,7 +187,7 @@ def _classes(trainers, members):
 
 
 def _sessions(classes):
-    """One dated session per schedule slot for 4 weeks: 7 Sep to 4 Oct 2026."""
+    """One dated session per schedule slot for 4 weeks: 7 Sep to 3 Oct 2026."""
     docs, n = [], 9001
     week0 = datetime(2026, 9, 7)  # a Monday
     for c in classes:

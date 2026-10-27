@@ -1,0 +1,181 @@
+Connected to MongoDB; database 'gym_db' recreated and seeded; reference date 2026-09-24
+
+==============================================================================
+Q1  [Selection]  Active VIP members living in Chennai
+==============================================================================
+member_id  name           membership.end_date
+---------  -------------  -------------------
+MEM1014    Divya Das      2026-12-31         
+MEM1043    Gautham Nair   2027-05-31         
+MEM1046    Nandini Menon  2027-02-28         
+(3 matching documents)
+
+==============================================================================
+Q2  [Selection]  Trainers who teach Yoga or CrossFit with at least 6 years of experience
+==============================================================================
+trainer_id  name            specialization               experience_years
+----------  --------------  ---------------------------  ----------------
+TRN03       Deepa Krishnan  Yoga, Pilates                9               
+TRN08       Vivek Nair      CrossFit, Olympic Lifting    8               
+TRN07       Kavitha Reddy   Yoga, Mobility               7               
+TRN01       Priya Menon     Strength Training, CrossFit  6               
+(4 matching documents)
+
+==============================================================================
+Q3  [Selection]  Unpaid bills already past their due date (oldest first)
+==============================================================================
+payment_id  member_name     amount  status   due_date  
+----------  --------------  ------  -------  ----------
+PAY7054     Divya Menon     1500    overdue  2026-08-05
+PAY7023     Isha Joshi      1500    pending  2026-09-05
+PAY7027     Gautham Bhat    2500    pending  2026-09-05
+PAY7047     Divya Das       4000    pending  2026-09-05
+PAY7061     Aishwarya Das   4000    pending  2026-09-05
+PAY7073     Karthik Sharma  2500    pending  2026-09-05
+PAY7085     Ananya Das      2500    pending  2026-09-05
+PAY7089     Vikram Kumar    1500    pending  2026-09-05
+(17 matching documents, first 8 shown)
+
+==============================================================================
+Q4  [Join (inner)]  Active VIP members with their assigned trainer
+==============================================================================
+member_id  name              trainer        certification
+---------  ----------------  -------------  -------------
+MEM1001    Harish Kumar      Priya Menon    ACE-CPT      
+MEM1012    Isha Das          Sanjay Pillai  ISSA-CPT     
+MEM1014    Divya Das         Rohit Sharma   NASM-CPT     
+MEM1018    Aishwarya Das     Kavitha Reddy  RYT-200      
+MEM1028    Lakshmi Krishnan  Rohit Sharma   NASM-CPT     
+MEM1033    Rahul Sharma      Vivek Nair     CF-L2        
+MEM1035    Dev Varma         Vivek Nair     CF-L2        
+MEM1038    Nandini Das       Farhan Ali     ACSM-EP      
+(8 matching documents)
+
+==============================================================================
+Q5  [Join (three tables)]  Attendance history of MEM1001 with class name and session time
+==============================================================================
+date        class_name    start_time  status   check_in_time
+----------  ------------  ----------  -------  -------------
+2026-09-23  Evening Yoga  19:00       present  18:52        
+2026-09-19  Evening Yoga  17:00       present  16:51        
+2026-09-16  Evening Yoga  19:00       present  18:50        
+2026-09-12  Evening Yoga  17:00       present  16:57        
+2026-09-09  Evening Yoga  19:00       present  19:00        
+(5 matching documents)
+
+==============================================================================
+Q6  [Join (left outer)]  Every trainer with the number of classes they teach, including trainers with none
+==============================================================================
+trainer_id  name            classes  class_names               
+----------  --------------  -------  --------------------------
+TRN03       Deepa Krishnan  2        Morning Yoga, Pilates Core
+TRN02       Rohit Sharma    1        HIIT Express              
+TRN04       Sanjay Pillai   1        Strength 101              
+TRN05       Meenakshi Iyer  1        Power Zumba               
+TRN06       Farhan Ali      1        Spin Cycle                
+TRN07       Kavitha Reddy   1        Evening Yoga              
+TRN08       Vivek Nair      1        CrossFit Burn             
+TRN01       Priya Menon     0                                  
+(8 matching documents)
+
+==============================================================================
+Q7  [Grouping and aggregation]  Money collected by payment mode (COUNT, SUM, AVG)
+==============================================================================
+payment_mode  payments  total   average
+------------  --------  ------  -------
+UPI           101       237500  2351   
+card          37        97000   2622   
+cash          15        37500   2500   
+(3 matching documents)
+
+==============================================================================
+Q8  [Grouping with HAVING]  Cities with more than 10 members, split by tier
+==============================================================================
+city       members  basic  premium  vip
+---------  -------  -----  -------  ---
+Chennai    16       6      6        4  
+Bengaluru  13       6      5        2  
+Hosur      12       4      2        6  
+(3 matching documents)
+
+==============================================================================
+Q9  [Grouping and aggregation]  Attendance outcome by class category
+==============================================================================
+category  marked  present  late  absent
+--------  ------  -------  ----  ------
+Yoga      160     103      8     49    
+Zumba     95      69       8     18    
+CrossFit  75      51       10    14    
+Strength  70      46       7     17    
+HIIT      68      46       8     14    
+Pilates   60      46       5     9     
+Cardio    52      36       4     12    
+(7 matching documents)
+
+==============================================================================
+Q10  [Subquery (scalar)]  Members whose attendance rate is below the gym-wide average
+==============================================================================
+name              marked  rate_pct  gym_average_pct
+----------------  ------  --------  ---------------
+Isha Nair         5       20        77.1           
+Keerthana Iyer    10      40        77.1           
+Meera Varma       24      45.8      77.1           
+Gautham Joshi     14      50        77.1           
+Isha Joshi        10      50        77.1           
+Karthik Krishnan  8       50        77.1           
+Siddharth Varma   24      50        77.1           
+Nandini Menon     10      60        77.1           
+(8 matching documents)
+
+==============================================================================
+Q11  [Subquery (correlated)]  Members with more than one unpaid bill
+==============================================================================
+member_id  name                tier     unpaid_bills  amount_due
+---------  ------------------  -------  ------------  ----------
+MEM1008    Isha Joshi          Basic    2             3000      
+MEM1009    Gautham Bhat        Premium  2             5000      
+MEM1014    Divya Das           VIP      2             8000      
+MEM1016    Divya Menon         Basic    2             3000      
+MEM1018    Aishwarya Das       VIP      2             8000      
+MEM1021    Karthik Sharma      Premium  2             5000      
+MEM1024    Ananya Das          Premium  2             5000      
+MEM1025    Vikram Kumar        Basic    2             3000      
+MEM1038    Nandini Das         VIP      2             8000      
+MEM1044    Kavya Kumar         Premium  2             5000      
+MEM1045    Siddharth Pillai    Basic    2             3000      
+MEM1046    Nandini Menon       VIP      2             8000      
+MEM1047    Varun Das           Basic    2             3000      
+MEM1049    Ashwin Krishnan     Premium  2             5000      
+MEM1051    Karthik Shetty      Premium  2             5000      
+MEM1052    Isha Nair           Premium  2             5000      
+MEM1054    Keerthana Krishnan  Premium  2             5000      
+(17 matching documents)
+
+==============================================================================
+Q12  [Subquery (EXISTS)]  Classes taught by trainers who coach more than 8 members
+==============================================================================
+class_name    trainer_name    trainer_members
+------------  --------------  ---------------
+Morning Yoga  Deepa Krishnan  12             
+Pilates Core  Deepa Krishnan  12             
+Spin Cycle    Farhan Ali      10             
+Strength 101  Sanjay Pillai   10             
+(4 matching documents)
+
+==============================================================================
+Q13  [Set operation (UNION)]  Members enrolled in Morning Yoga or Evening Yoga (each counted once)
+==============================================================================
+morning_yoga: 13  evening_yoga: 19  union_size: 27
+result: Aditya Reddy, Dev Varma, Divya Das, Gautham Joshi, Gautham Subramanian, Harish Kumar, Harish Subramanian, Isha Das, Isha Joshi, Isha Nair, Karthik Sharma, Karthik Shetty, Keerthana Iyer, Keerthana Krishnan, Lakshmi Bhat, Lakshmi Krishnan, Manoj Shetty, Meera Varma, Nandini Das, Pranav Varma, Rahul Reddy, Shreya Iyer, Siddharth Pillai, Siddharth Sharma, Siddharth Varma, Sneha Kumar, Varun Das
+
+==============================================================================
+Q14  [Set operation (INTERSECT)]  Members enrolled in both CrossFit Burn and Strength 101
+==============================================================================
+intersect_size: 5
+result: Dev Varma, Divya Menon, Meera Varma, Rahul Reddy, Siddharth Sharma
+
+==============================================================================
+Q15  [Set operation (EXCEPT)]  Active members who are not enrolled in any class
+==============================================================================
+active_members: 50  enrolled_somewhere: 47  except_size: 3
+result: Ashwin Krishnan, Rahul Sharma, Swathi Varma

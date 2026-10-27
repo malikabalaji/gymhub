@@ -2,9 +2,9 @@
 
     python demo.py            # against MongoDB (MONGO_URI, default localhost replica set rs0)
     python demo.py --mock     # offline, in-memory mongomock (no server needed)
-    python demo.py --section crud   # run one section: setup | crud | agg | graph | index | txn
+    python demo.py --section crud   # run one section: setup | crud | agg | graph | index | txn | trig
 
-Runs every step in rubric order: implementation, CRUD, advanced features.
+Runs every step in order: implementation, CRUD, advanced features, triggers.
 """
 import argparse
 from datetime import datetime
@@ -12,7 +12,7 @@ from pprint import pformat
 
 from pymongo.errors import DuplicateKeyError, WriteError
 
-from gym_db import aggregations as A, crud as C, transactions as T
+from gym_db import aggregations as A, crud as C, transactions as T, triggers as TR
 from gym_db.config import COLLECTIONS, REFERENCE_DATE, get_db, is_mock, supports_transactions
 from gym_db.indexes import create_indexes, explain_comparison
 from gym_db.schema import create_collections
@@ -296,7 +296,29 @@ def txn(db):
               f"| {s2['session_id']} status: {db.class_sessions.find_one({'_id': s2['_id']})['status']}")
 
 
-SECTIONS = {"setup": setup, "crud": crud, "agg": agg, "graph": graph, "index": index, "txn": txn}
+def trig(db):
+    h1("3e. TRIGGERS: change streams on members and payments")
+    if is_mock() or not supports_transactions(db):
+        print("(change streams need a real replica set; skipped)")
+        return
+    import time
+    db.audit_log.drop()
+    stop = TR.start_in_background(db)
+    expired = db.members.find_one({"membership.status": "expired"}, sort=[("member_id", 1)])
+    inv = C.create_invoice(db, expired["member_id"], datetime(2026, 10, 1), datetime(2026, 10, 31), datetime(2026, 10, 5))
+    C.record_payment(db, inv, "UPI")
+    C.update_member(db, "MEM1002", phone="9000000002")
+    time.sleep(1.5)
+    stop.set()
+    h2(f"TR2: {expired['member_id']} was expired; after paying {inv} the trigger set status to "
+       f"{db.members.find_one({'_id': expired['_id']})['membership']['status']}")
+    h2("TR1: audit_log written by the trigger")
+    table([{**r, "changed_fields": ", ".join(r["changed_fields"] or [])} for r in
+           db.audit_log.find({}, {"_id": 0, "at": 0}).sort("at", 1)],
+          ["collection", "operation", "key", "changed_fields"])
+
+
+SECTIONS = {"setup": setup, "crud": crud, "agg": agg, "graph": graph, "index": index, "txn": txn, "trig": trig}
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
@@ -306,7 +328,9 @@ if __name__ == "__main__":
     db = get_db(mock=args.mock)
     print(f"Connected to {'mongomock (in-memory)' if is_mock() else 'MongoDB'}; database '{db.name}';"
           f" reference date {REFERENCE_DATE.date()}")
-    if args.section and args.section != "setup":
+    if args.section == "setup":
+        setup(db)
+    elif args.section:
         setup(db)
         SECTIONS[args.section](db)
     else:

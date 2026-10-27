@@ -43,7 +43,7 @@ def class_popularity(db):
             "attendance_rate_pct": {"$round": [{"$multiply": [{"$divide": ["$attended", "$marked"]}, 100]}, 1]},
             "fill_rate_pct": {"$round": [{"$multiply": [
                 {"$divide": [{"$size": "$c.enrolled_members"}, "$c.capacity"]}, 100]}, 1]}}},
-        {"$sort": {"avg_turnout": -1}},
+        {"$sort": {"avg_turnout": -1, "class_name": 1}},
     ]))
 
 
@@ -59,7 +59,7 @@ def at_risk_members(db, threshold=60):
         {"$unwind": "$m"},
         {"$project": {"_id": 0, "member_id": "$m.member_id", "name": 1, "tier": "$m.membership.type",
                       "sessions_marked": "$total", "attended": 1, "rate_pct": 1}},
-        {"$sort": {"rate_pct": 1}},
+        {"$sort": {"rate_pct": 1, "member_id": 1}},
     ]))
 
 
@@ -79,7 +79,7 @@ def outstanding_dues(db, today=REFERENCE_DATE):
                       "tier": "$m.membership.type", "bills": 1, "amount_due": 1, "max_days_overdue": 1,
                       "priority": {"$cond": [{"$gte": ["$max_days_overdue", 15]}, "HIGH",
                                              {"$cond": [{"$gt": ["$max_days_overdue", 0]}, "MEDIUM", "LOW"]}]}}},
-        {"$sort": {"max_days_overdue": -1, "amount_due": -1}},
+        {"$sort": {"max_days_overdue": -1, "amount_due": -1, "member_id": 1}},
     ]))
 
 
@@ -95,7 +95,7 @@ def trainer_workload(db):
                                                              "cond": {"$eq": ["$$p.status", "active"]}}}},
                       "classes": {"$size": "$cls"},
                       "class_names": "$cls.class_name"}},
-        {"$sort": {"members": -1}},
+        {"$sort": {"members": -1, "trainer_id": 1}},
     ]))
 
 
@@ -134,7 +134,7 @@ def peak_hours(db):
         {"$match": {"status": {"$ne": "absent"}}},
         {"$group": {"_id": {"$substr": ["$check_in_time", 0, 2]}, "check_ins": {"$sum": 1}}},
         {"$project": {"_id": 0, "hour": {"$concat": ["$_id", ":00"]}, "check_ins": 1}},
-        {"$sort": {"check_ins": -1}},
+        {"$sort": {"check_ins": -1, "hour": 1}},
     ]))
 
 

@@ -1,0 +1,178 @@
+.trainer-dashboard {
+  --trainer-control-bg: var(--bg-card);
+  --trainer-control-hover: var(--bg-card-hover);
+  color: var(--text-main);
+}
+
+.trainer-dashboard button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 8px 12px;
+  border: 1px solid var(--primary);
+  border-radius: 7px;
+  background: var(--primary);
+  color: #fff;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 650;
+  line-height: 1.25;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.trainer-dashboard button:hover:not(:disabled) {
+  border-color: var(--primary-hover);
+  background: var(--primary-hover);
+}
+
+.trainer-dashboard button:focus-visible,
+.trainer-dashboard input:focus-visible,
+.trainer-dashboard select:focus-visible,
+.trainer-dashboard summary:focus-visible {
+  outline: 3px solid var(--primary-glow);
+  outline-offset: 2px;
+  border-color: var(--primary);
+}
+
+.trainer-dashboard button:disabled {
+  cursor: not-allowed;
+  border-color: #334155;
+  background: #1e293b;
+  color: #94a3b8;
+  opacity: 1;
+}
+
+.trainer-dashboard .trainer-button-secondary {
+  border-color: var(--border-color);
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+}
+
+.trainer-dashboard .trainer-button-secondary:hover:not(:disabled) {
+  border-color: var(--primary);
+  background: #223252;
+}
+
+.trainer-dashboard .trainer-button-danger {
+  border-color: rgba(239, 68, 68, 0.55);
+  background: var(--danger-bg);
+  color: #fca5a5;
+}
+
+.trainer-dashboard .trainer-button-danger:hover:not(:disabled) {
+  border-color: var(--danger);
+  background: rgba(239, 68, 68, 0.25);
+  color: #fee2e2;
+}
+
+.trainer-dashboard .trainer-sign-out {
+  min-width: 112px;
+  min-height: 40px;
+}
+
+.trainer-exercise-list,
+.trainer-attendance-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trainer-exercise-list li,
+.trainer-attendance-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-card);
+  color: var(--text-main);
+}
+
+.trainer-exercise-detail,
+.trainer-row-actions,
+.trainer-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.trainer-exercise-detail strong {
+  min-width: 34px;
+  color: #93c5fd;
+}
+
+.trainer-exercise-detail > span {
+  color: var(--text-main);
+}
+
+.trainer-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+  align-items: end;
+  gap: 12px;
+  padding: 12px;
+}
+
+.trainer-form label {
+  display: grid;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.trainer-dashboard input,
+.trainer-dashboard select {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid var(--border-color);
+  border-radius: 7px;
+  background: var(--trainer-control-bg);
+  color: var(--text-main);
+  color-scheme: dark;
+  font: inherit;
+  padding: 8px 10px;
+}
+
+.trainer-dashboard input::placeholder {
+  color: var(--text-dim);
+  opacity: 1;
+}
+
+.trainer-dashboard input:hover,
+.trainer-dashboard select:hover {
+  border-color: #475569;
+  background: var(--trainer-control-hover);
+}
+
+.trainer-dashboard option {
+  background: var(--bg-card);
+  color: var(--text-main);
+}
+
+.trainer-attendance-form {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 145px), 1fr));
+  margin: 12px 0;
+  padding: 0;
+}
+
+@media (max-width: 520px) {
+  .trainer-dashboard {
+    padding-right: 14px !important;
+    padding-left: 14px !important;
+  }
+
+  .trainer-exercise-detail {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+  }
+}

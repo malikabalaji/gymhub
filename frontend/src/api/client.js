@@ -53,3 +53,32 @@ export const authApi = {
 export const membersApi = {
   getMyDashboard: () => apiRequest('/members/me/dashboard'),
 };
+
+export const trainersApi = {
+  getMyDashboard: () => apiRequest('/trainers/me/dashboard'),
+  createPlan: (memberId, plan) => apiRequest(`/trainers/me/members/${encodeURIComponent(memberId)}/plans`, { method: 'POST', body: JSON.stringify(plan) }),
+  addExercise: (planId, exercise) => apiRequest(`/trainers/me/plans/${encodeURIComponent(planId)}/exercises`, { method: 'POST', body: JSON.stringify(exercise) }),
+  progressExercise: (planId, name, addKg) => apiRequest(`/trainers/me/plans/${encodeURIComponent(planId)}/exercises/${encodeURIComponent(name)}/progress`, { method: 'PATCH', body: JSON.stringify({ add_kg: addKg }) }),
+  removeExercise: (planId, name) => apiRequest(`/trainers/me/plans/${encodeURIComponent(planId)}/exercises/${encodeURIComponent(name)}`, { method: 'DELETE' }),
+  deletePlan: (planId) => apiRequest(`/trainers/me/plans/${encodeURIComponent(planId)}`, { method: 'DELETE' }),
+  getAttendance: (sessionId) => apiRequest(`/trainers/me/sessions/${encodeURIComponent(sessionId)}/attendance`),
+  recordAttendance: (sessionId, memberId, attendance) => apiRequest(`/trainers/me/sessions/${encodeURIComponent(sessionId)}/attendance/${encodeURIComponent(memberId)}`, { method: 'POST', body: JSON.stringify(attendance) }),
+  deleteAttendance: (sessionId, memberId) => apiRequest(`/trainers/me/sessions/${encodeURIComponent(sessionId)}/attendance/${encodeURIComponent(memberId)}`, { method: 'DELETE' }),
+};
+
+export const adminApi = {
+  dashboard: (page = 1) => apiRequest(`/admin/dashboard?page=${page}`),
+  analytics: () => apiRequest('/admin/analytics'),
+  referralNetwork: (memberId) => apiRequest(`/admin/analytics/referrals/${encodeURIComponent(memberId)}`),
+  createMember: (body) => apiRequest('/admin/members', { method: 'POST', body: JSON.stringify(body) }),
+  updateMembership: (id, body) => apiRequest(`/admin/members/${encodeURIComponent(id)}/membership`, { method: 'PATCH', body: JSON.stringify(body) }),
+  assignTrainer: (id, trainer_id) => apiRequest(`/admin/members/${encodeURIComponent(id)}/trainer`, { method: 'PUT', body: JSON.stringify({ trainer_id }) }),
+  createTrainer: (body) => apiRequest('/admin/trainers', { method: 'POST', body: JSON.stringify(body) }),
+  setAvailability: (id, body) => apiRequest(`/admin/trainers/${encodeURIComponent(id)}/availability`, { method: 'PUT', body: JSON.stringify(body) }),
+  createClass: (body) => apiRequest('/admin/classes', { method: 'POST', body: JSON.stringify(body) }),
+  createSession: (id, body) => apiRequest(`/admin/classes/${encodeURIComponent(id)}/sessions`, { method: 'POST', body: JSON.stringify(body) }),
+  cancelSession: (id) => apiRequest(`/admin/sessions/${encodeURIComponent(id)}/cancel`, { method: 'POST' }),
+  createInvoice: (body) => apiRequest('/admin/invoices', { method: 'POST', body: JSON.stringify(body) }),
+  recordPayment: (id, body) => apiRequest(`/admin/invoices/${encodeURIComponent(id)}/record-payment`, { method: 'POST', body: JSON.stringify(body) }),
+  flagOverdue: () => apiRequest('/admin/invoices/flag-overdue', { method: 'POST' }),
+};

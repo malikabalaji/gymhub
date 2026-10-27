@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from .config import CORS_ORIGINS
 from .database import get_database
-from .routers import auth, members, meta
+from .routers import admin, auth, members, meta, trainers
 
 app = FastAPI(
     title="Gym Membership Management System API",
@@ -25,6 +25,8 @@ app.add_middleware(
 app.include_router(auth.router, prefix="/api")
 app.include_router(meta.router, prefix="/api")
 app.include_router(members.router, prefix="/api")
+app.include_router(trainers.router, prefix="/api")
+app.include_router(admin.router, prefix="/api")
 
 
 @app.get("/")

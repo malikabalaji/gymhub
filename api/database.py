@@ -3,10 +3,27 @@ import os
 import bcrypt
 from gym_db import config as gym_config
 
+_mock_client = None
+
+
+def _get_mock_database():
+    """Return the API process's stable mongomock database client."""
+    global _mock_client
+    if _mock_client is None:
+        import mongomock
+        from gym_db import mockpatch  # noqa: F401  ($round support for offline testing)
+        _mock_client = mongomock.MongoClient()
+
+    # Keep the shared gym_db helpers pointed at the same client so is_mock()
+    # and transaction capability checks describe the database being served.
+    gym_config._client = _mock_client
+    gym_config.IS_MOCK = True
+    return _mock_client[gym_config.DB_NAME]
+
 
 def ensure_admin(db):
     """Safely ensure the admins collection exists with indexes and default admin.
-    
+
     CRITICAL: Never drops or touches existing collections or documents.
     """
     existing = db.list_collection_names()
@@ -35,7 +52,7 @@ def ensure_admin(db):
 
 def get_database(mock: bool = None):
     """Return the database handle and ensure admin identity exists safely.
-    
+
     If live MongoDB is not reachable or USE_MOCK is set, gracefully falls back
     to in-memory mock database initialized with reproducible sample data.
     """
@@ -46,15 +63,25 @@ def get_database(mock: bool = None):
         else:
             try:
                 db = gym_config.get_db(mock=False)
-                ensure_admin(db)
-                return db
             except Exception as e:
                 # Live server ping failed; fall back to in-memory mock
                 mock = True
+            else:
+                existing = set(db.list_collection_names())
+                if not existing.intersection(gym_config.COLLECTIONS):
+                    from gym_db.schema import create_collections
+                    from gym_db.seed import seed
+                    from gym_db.indexes import create_indexes
 
-    # In mock mode, initialize collections, sample data, and admin if not yet seeded
-    gym_config._client = None
-    db = gym_config.get_db(mock=True)
+                    create_collections(db, drop_existing=False)
+                    seed(db)
+                    create_indexes(db)
+                ensure_admin(db)
+                return db
+
+    # In mock mode, initialize collections, sample data, and admin if not yet seeded.
+    # Retain one client for this API process so writes survive subsequent requests.
+    db = _get_mock_database()
     if "members" not in db.list_collection_names() or db.members.count_documents({}) == 0:
         from gym_db.schema import create_collections
         from gym_db.seed import seed

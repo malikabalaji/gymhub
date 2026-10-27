@@ -29,12 +29,19 @@ def get_system_metadata(db=Depends(get_db)):
         "reference_date": REFERENCE_DATE.strftime("%Y-%m-%d"),
         "tier_fees": TIER_FEES,
         "is_mock": mock_mode,
+        "database_mode": "mock" if mock_mode else "mongodb",
         "database_name": db.name,
         "collections": counts,
         "capabilities": {
             "transactions": {
                 "supported": txn_supported,
-                "notes": "Enabled via replica set (rs0); emulated non-transactionally under mongomock" if not txn_supported else "Active on replica set",
+                "notes": (
+                    "Unavailable in mongomock; transaction guarantees are not provided"
+                    if mock_mode else
+                    "Active on a replica set or sharded cluster"
+                    if txn_supported else
+                    "Unavailable: MongoDB is not running as a replica set or sharded cluster"
+                ),
             },
             "schema_validation": {
                 "supported": not mock_mode,
